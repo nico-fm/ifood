@@ -1,0 +1,75 @@
+package com.example.gabriel.app_gabo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.app.Activity;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class Comida extends AppCompatActivity {
+
+
+    ListViewAdapter adapter;
+    private Context context;
+
+
+    String[] titulo = new String[]{
+            "Pollos Copacabana",
+            "Xpress by Factory",
+            "Pizza Eli's",
+            "Mr. Pizza",
+            "Planet Pizza",
+            "Burger King"
+    };
+    int[] imagenes = {
+            R.drawable.pollo,
+            R.drawable.xpress,
+            R.drawable.elis,
+            R.drawable.mrpizza,
+            R.drawable.planet,
+            R.drawable.burger,
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_comida);
+
+        context = this;
+
+
+        final ListView lista = (ListView) findViewById(R.id.ListViewComida);
+        adapter = new ListViewAdapter(this, titulo, imagenes);
+        lista.setAdapter(adapter);
+
+
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+                if (position == 0){
+                    Intent intent=new Intent(context,Pollo.class);
+                    startActivity(intent);
+
+                }
+
+            }
+        });
+
+    }
+
+
+}
+

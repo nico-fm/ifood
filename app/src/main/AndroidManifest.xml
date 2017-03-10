@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gabriel.app_gabo">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuPrincipal" />
+        <activity
+            android:name=".Comida"
+            android:label="@string/.Comida" />
+        <activity
+            android:name=".Vegetariano"
+            android:label="@string/.Vegetariano" />
+        <activity
+            android:name=".Promociones"
+            android:label="@string/.Promociones" />
+        <activity
+            android:name=".BuscarRestaurant"
+            android:label="@string/.BuscarRestaurant" />
+        <activity
+            android:name=".Favoritos"
+            android:label="@string/.Favoritos" />
+        <activity
+            android:name=".Xpress"
+            android:label="Xpress" />
+        <activity
+            android:name=".Pollo"
+            android:label="Pollo Copacabana" ></activity>
+    </application>
+
+</manifest>

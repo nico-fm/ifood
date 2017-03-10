@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">iFood</string>
+
+
+    <string name=".Comida">Comida Rapida</string>
+    <string name=".Vegetariano">Comida Vegetariana</string>
+    <string name=".Promociones">Promociones</string>
+    <string name=".BuscarRestaurant">Buscar Restaurant</string>
+    <string name=".Favoritos">Favoritos</string>
+    <string name=".Pollo">Pollos Copacabana</string>
+</resources>
