@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtUsuario;
     private EditText txtPassword;
     private Button btnIniciar;
+    private TextView lblRegistrarse;
     private Context context;
 
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         txtUsuario=(EditText)findViewById(R.id.txtUsuario);
         txtPassword=(EditText)findViewById(R.id.txtPassword);
         btnIniciar=(Button)findViewById(R.id.btnIniciar);
-
+        lblRegistrarse=(Button)findViewById(R.id.lblRegistrarse);
 
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        lblRegistrarse.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                Intent intent = new Intent(context, Registro.class);
+                startActivity(intent);
+            }
+        });
 
 
 //hola se ve?

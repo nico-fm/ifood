@@ -53,6 +53,19 @@
         android:padding="15dp"
         android:textSize="15sp" />
 
+    <TextView
+
+        android:text="Registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/lblRegistrarse"
+        tools:text="Registrarse"
+        android:textStyle="normal"
+        android:textColor="@android:color/holo_blue_light" />
+
 
 
 </RelativeLayout>
