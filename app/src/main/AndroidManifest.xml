@@ -35,13 +35,25 @@
             android:label="@string/.Favoritos" />
         <activity
             android:name=".Xpress"
-            android:label="Xpress" />
+            android:label="Xpress by Factory" />
         <activity
             android:name=".Pollo"
-            android:label="Pollo Copacabana" />
+            android:label="Pollos Copacabana" />
         <activity
             android:name=".Registro"
-            android:label="Registrarse" ></activity>
+            android:label="Registrarse" />
+        <activity
+            android:name=".Elis"
+            android:label="Pizza Eli's"/>
+        <activity
+            android:name=".Mrpizza"
+            android:label="Mr. Pizza"/>
+        <activity
+            android:name=".Planet"
+            android:label="Planet Pizzaa"/>
+        <activity
+            android:name=".Burger"
+            android:label="Burger King"></activity>
     </application>
 
 </manifest>

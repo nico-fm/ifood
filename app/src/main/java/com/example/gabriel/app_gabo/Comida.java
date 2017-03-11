@@ -64,6 +64,31 @@ public class Comida extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+                if (position == 1){
+                    Intent intent=new Intent(context,Xpress.class);
+                    startActivity(intent);
+
+                }
+                if (position == 2){
+                    Intent intent=new Intent(context,Elis.class);
+                    startActivity(intent);
+
+                }
+                if (position == 3){
+                    Intent intent=new Intent(context,Mrpizza.class);
+                    startActivity(intent);
+
+                }
+                if (position == 4){
+                    Intent intent=new Intent(context,Planet.class);
+                    startActivity(intent);
+
+                }
+                if (position == 5){
+                    Intent intent=new Intent(context,Burger.class);
+                    startActivity(intent);
+
+                }
 
             }
         });
