@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
         context=this;
         SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
 
-        String usuario_almacenado= prefs.getString("usuario","no");
+       /* String usuario_almacenado= prefs.getString("usuario","no");
         String password_almacenado= prefs.getString("password","no");
 
         if(usuario_almacenado.compareTo("no")!=0 &&password_almacenado.compareTo("no")!=0 ){
             Intent a=new Intent(getApplicationContext(),MenuPrincipal.class);
             finish();
             startActivity(a);
-        }
+        }*/
 
         txtUsuario=(EditText)findViewById(R.id.txtUsuario);
         txtPassword=(EditText)findViewById(R.id.txtPassword);
@@ -47,19 +47,26 @@ public class MainActivity extends AppCompatActivity {
 
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                nombre_ingresado = txtUsuario.getText().toString();
-                password_ingresado = txtPassword.getText().toString();
-                SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = prefs.edit();
-                editor.putString("usuario", nombre_ingresado);
-                editor.putString("password", password_ingresado);
-                editor.commit();
+                String campo_usuario = txtUsuario.getText().toString();
+                String campo_password = txtPassword.getText().toString();
 
-                Toast.makeText(getApplicationContext(), "Usuario" + nombre_ingresado, Toast.LENGTH_SHORT).show();
+                if (campo_usuario.compareTo("gabriel") == 0 && campo_password.compareTo("gabriel") == 0) {
+                    SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("usuario", campo_usuario);
+                    editor.putString("password", campo_password);
+                    editor.commit();
 
-                Intent a = new Intent(getApplicationContext(),MenuPrincipal.class);
-                startActivity(a);
-                finish();
+
+                    Intent a = new Intent(getApplicationContext(), MenuPrincipal.class);
+                    startActivity(a);
+                    finish();
+                }
+                else{
+                    Toast mensaje=Toast.makeText(getApplicationContext(),
+                            "Usuario o Contrasena Incorrecta", Toast.LENGTH_SHORT);
+                    mensaje.show();
+                }
             }});
 
         lblRegistro.setOnClickListener(new View.OnClickListener(){
