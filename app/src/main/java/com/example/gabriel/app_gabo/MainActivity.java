@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             Intent a=new Intent(getApplicationContext(),MenuPrincipal.class);
             finish();
             startActivity(a);
+            blslalmkbadsjb
         }*/
 
         txtUsuario=(EditText)findViewById(R.id.txtUsuario);
