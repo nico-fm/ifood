@@ -38,6 +38,8 @@
         <activity
             android:name=".Pollo"
             android:label="Pollo Copacabana" ></activity>
+
+
     </application>
 
 </manifest>
