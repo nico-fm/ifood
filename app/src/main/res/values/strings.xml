@@ -8,5 +8,6 @@
     <string name=".BuscarRestaurant">Buscar Restaurant</string>
     <string name=".Favoritos">Favoritos</string>
     <string name=".Pollo">Pollos Copacabana</string>
+    <string name="title_activity_mapas_pollo">Map</string>
 
 </resources>
