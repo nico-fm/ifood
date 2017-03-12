@@ -10,4 +10,76 @@
     <string name=".Pollo">Pollos Copacabana</string>
     <string name="title_activity_mapas_pollo">Map</string>
 
+    <string-array name="nombre_lista_pollo">
+
+        <item>Seleccionar</item>
+        <item>Balde 8 Presas</item>
+        <item>Combo Especial</item>
+        <item>Combo Trio</item>
+        <item>Combo Fiesta </item>
+        <item>Combo 1/4</item>
+        <item>Combo Antojito</item>
+        <item>Copalitos</item>
+        <item>Combo Copito </item>
+
+
+
+    </string-array>
+    <string-array name="nombre_lista_hamburguesa">
+        <item>Seleccionar</item>
+        <item>Combo Doble</item>
+        <item>Combo Copacabana</item>
+        <item>Combo Queso</item>
+        <item>Combo Recreo</item>
+
+
+
+
+    </string-array>
+    <string-array name="nombre_lista_extras">
+        <item>Seleccionar</item>
+        <item>Salsas</item>
+        <item>Papas Fritas</item>
+        <item>Arroz</item>
+        <item>Gaseosas</item>
+
+
+
+
+    </string-array>
+
+
+
+
+    <integer-array name="lista_pollo">
+
+        <item>@drawable/blanco</item>
+        <item>@drawable/balde_8</item>
+        <item>@drawable/combo_especial</item>
+        <item>@drawable/combo_trio</item>
+        <item>@drawable/combo_fiesta</item>
+        <item>@drawable/combo_14</item>
+        <item>@drawable/combo_antojito</item>
+        <item>@drawable/copalitos</item>
+        <item>@drawable/combo_copito</item>
+
+    </integer-array>
+    <integer-array name="lista_extras">
+        <item>@drawable/blanco</item>
+        <item>@drawable/salsas</item>
+        <item>@drawable/papas</item>
+        <item>@drawable/arroz</item>
+        <item>@drawable/gaseosas</item>
+
+    </integer-array>
+    <integer-array name="lista_hamburguesa">
+        <item>@drawable/blanco</item>
+        <item>@drawable/combo_doble</item>
+        <item>@drawable/combo_copacabana</item>
+        <item>@drawable/combo_queso</item>
+        <item>@drawable/combo_recreo</item>
+
+    </integer-array>
+
+
 </resources>

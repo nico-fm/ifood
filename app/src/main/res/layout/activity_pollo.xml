@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pollo"
     android:layout_width="match_parent"
@@ -8,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.gabriel.app_gabo.Pollo">
+    tools:context="com.example.gabriel.app_gabo.Pollo"
+    android:background="@drawable/blanco">
 
     <Button
         android:text="Visitar Pagina"
@@ -31,7 +33,7 @@
         android:layout_marginStart="26dp" />
 
     <Spinner
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:id="@+id/SpinnerPollo"
@@ -58,7 +60,7 @@
         android:id="@+id/lblHamPollo" />
 
     <Spinner
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblHamPollo"
         android:layout_alignParentStart="true"
@@ -66,7 +68,7 @@
         android:id="@+id/SpinnerHam" />
 
     <Spinner
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblExtrasPollo"
         android:layout_alignParentStart="true"
@@ -82,13 +84,37 @@
         android:layout_below="@+id/SpinnerHam"
         android:layout_alignStart="@+id/lblHamPollo" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imagen_pollo"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btnPolloPagina" />
+
     <Button
         android:text="HACER PEDIDO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/btnPedidoPollo"
         android:layout_above="@+id/btnPolloPagina"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp"
-        android:id="@+id/btnPedidoPollo" />
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imagen_extras"
+        android:layout_alignTop="@+id/lblExtrasPollo"
+        android:layout_alignStart="@+id/imagen_pollo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imagen_hamburguesa"
+        android:layout_alignTop="@+id/lblHamPollo"
+        android:layout_alignStart="@+id/imagen_pollo" />
 
 </RelativeLayout>
