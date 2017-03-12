@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gabriel.app_gabo.MainActivity"
-    android:background="@drawable/fondo_inicio_3">
+    android:background="@drawable/fondo_inicio_3"
+    android:padding="10sp">
 
     <Button
         android:text="Comida Rapida"
@@ -20,10 +21,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textScaleX="1.5"
-        android:textSize="15sp"
-        android:textStyle="bold"
         android:background="@android:color/holo_green_light"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+        android:textColor="@color/cast_expanded_controller_background_color" />
 
     <Button
         android:text="Comida Vegetariana"
@@ -81,10 +82,14 @@
         android:text="Cerrar Sesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/btnFavoritos"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="19dp"
         android:id="@+id/btnCerrar"
-        android:background="@android:color/holo_red_dark"
-        android:textColor="@color/cast_expanded_controller_background_color" />
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_header_color"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnFavoritos"
+        android:textColorHint="?android:attr/textColorPrimaryInverseNoDisable"
+        android:textColorHighlight="@color/cast_expanded_controller_ad_container_white_stripe_color"
+        android:textColorLink="?android:attr/fastScrollTextColor"
+        android:padding="10sp" />
 </RelativeLayout>
