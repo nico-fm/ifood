@@ -3,6 +3,7 @@ package com.example.gabriel.app_gabo;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,71 +15,51 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText txtUsuario;
-    private EditText txtPassword;
-    private Button btnIniciar;
-    private TextView lblRegistro;
-    private Context context;
-
-    String nombre_ingresado;
-    String password_ingresado;
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        context=this;
-        SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
+        Button Iniciar = (Button) findViewById(R.id.btnIniciar);
+        TextView Registrarse = (TextView) findViewById(R.id.txtRegistrarse);
 
-       /* String usuario_almacenado= prefs.getString("usuario","no");
-        String password_almacenado= prefs.getString("password","no");
+        Registrarse.setPaintFlags(Registrarse.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
-        if(usuario_almacenado.compareTo("no")!=0 &&password_almacenado.compareTo("no")!=0 ){
-            Intent a=new Intent(getApplicationContext(),MenuPrincipal.class);
-            finish();
-            startActivity(a);
 
-        }*/
-
-        txtUsuario=(EditText)findViewById(R.id.txtUsuario);
-        txtPassword=(EditText)findViewById(R.id.txtPassword);
-        btnIniciar=(Button)findViewById(R.id.btnIniciar);
-        lblRegistro=(TextView) findViewById(R.id.lblRegistro);
-
-        btnIniciar.setOnClickListener(new View.OnClickListener() {
+        Iniciar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String campo_usuario = txtUsuario.getText().toString();
-                String campo_password = txtPassword.getText().toString();
+                // Perform action on click
+                DatabaseHandler db = new DatabaseHandler(v.getContext());
+                EditText user = (EditText) findViewById(R.id.txtUsuario);
+                EditText pass = (EditText) findViewById(R.id.txtPassword);
+                String userValue = user.getText().toString();
+                String passValue = pass.getText().toString();
+                boolean accountMatch = db.validateUser(userValue,passValue);
+                int charUserLength = userValue.length();
+                int charPassLength = passValue.length();
 
-                if (campo_usuario.compareTo("gabriel") == 0 && campo_password.compareTo("gabriel") == 0) {
-                    SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor = prefs.edit();
-                    editor.putString("usuario", campo_usuario);
-                    editor.putString("password", campo_password);
-                    editor.commit();
-
-
-                    Intent a = new Intent(getApplicationContext(), MenuPrincipal.class);
-                    startActivity(a);
-                    finish();
+                if(accountMatch){
+                    Intent toSuc = new Intent(MainActivity.this,MenuPrincipal.class);
+                    startActivity(toSuc);
                 }
-                else{
-                    Toast mensaje=Toast.makeText(getApplicationContext(),
-                            "Usuario o Contrasena Incorrecta", Toast.LENGTH_SHORT);
-                    mensaje.show();
+                else if(userValue.equals("") && passValue.equals("")){
+                    Toast.makeText(MainActivity.this,"Usuario o Contrasena Vacio", Toast.LENGTH_SHORT).show();
                 }
-            }});
-
-        lblRegistro.setOnClickListener(new View.OnClickListener(){
+                else if(charUserLength < 5 && charPassLength < 5){ // At least 6 characters anything less is too short
+                    Toast.makeText(MainActivity.this,"Nombre de Usuario o Contraseña demasiado corto", Toast.LENGTH_SHORT).show();
+                }
+                else{Toast.makeText(MainActivity.this, "Contraseña o Usuario Incorrecto", Toast.LENGTH_SHORT).show();}
+            }
+        });
+        Registrarse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(context, Registro.class);
-                startActivity(intent);
+                Intent toSign = new Intent(MainActivity.this, SignUp.class);
+                startActivity(toSign);
             }
         });
 
+    }
+}
 
 
-    }}
 
 
