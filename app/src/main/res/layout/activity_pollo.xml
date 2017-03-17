@@ -12,26 +12,6 @@
     tools:context="com.example.gabriel.app_gabo.Pollo"
     android:background="@drawable/blanco">
 
-    <Button
-        android:text="Visitar Pagina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="25dp"
-        android:id="@+id/btnPolloPagina"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="Buscar en Mapas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnBuscarMapaPollo"
-        android:layout_alignBaseline="@+id/btnPolloPagina"
-        android:layout_alignBottom="@+id/btnPolloPagina"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="26dp" />
-
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,15 +72,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignEnd="@+id/btnPolloPagina" />
 
-    <Button
-        android:text="HACER PEDIDO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:id="@+id/btnPedidoPollo"
-        android:layout_above="@+id/btnPolloPagina"
-        android:layout_centerHorizontal="true" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,5 +87,36 @@
         android:id="@+id/imagen_hamburguesa"
         android:layout_alignTop="@+id/lblHamPollo"
         android:layout_alignStart="@+id/imagen_pollo" />
+
+    <Button
+        android:text="Buscar en Mapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuscarMapaPollo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="25sp"
+        android:paddingLeft="25sp" />
+
+    <Button
+        android:text="Visitar Pagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPolloPagina"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="37sp"
+        android:paddingRight="37sp" />
+
+    <Button
+        android:text="HACER PEDIDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPedidoPollo"
+        android:layout_above="@+id/btnBuscarMapaPollo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

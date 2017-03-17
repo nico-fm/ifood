@@ -10,4 +10,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gabriel.app_gabo.Burger">
 
+    <Button
+        android:text="Buscar en Mapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuscarMapaBurger"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="25sp"
+        android:paddingLeft="25sp" />
+
+    <Button
+        android:text="Visitar Pagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBurgerPagina"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="37sp"
+        android:paddingRight="37sp" />
+
+    <Button
+        android:text="HACER PEDIDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPedidoXpress"
+        android:layout_above="@+id/btnBuscarMapaBurger"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
