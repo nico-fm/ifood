@@ -82,7 +82,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB7TlkGbAgpbxCoEd1e5jjcl5SlU_vD8fM" />
+            android:value="AIzaSyBfrhhymckyq0beRsegy3ympslynr_cIGc" />
 
         <activity
             android:name=".PolloMapas"
