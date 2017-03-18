@@ -75,7 +75,7 @@
         <item>@drawable/combo_recreo</item>
 
     </integer-array>
-    <string name="title_activity_menu_principali">MenuPrincipali</string>
+
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->

@@ -27,19 +27,19 @@
         <activity android:name=".MenuPrincipal" />
         <activity
             android:name=".Comida"
-            android:label="@string/.Comida" />
+            android:label="Comida" />
         <activity
             android:name=".Vegetariano"
-            android:label="@string/.Vegetariano" />
+            android:label="Vegetariano" />
         <activity
             android:name=".Promociones"
-            android:label="@string/.Promociones" />
+            android:label="Promociones" />
         <activity
             android:name=".BuscarRestaurant"
-            android:label="@string/.BuscarRestaurant" />
+            android:label="BuscarRestaurant" />
         <activity
             android:name=".Favoritos"
-            android:label="@string/.Favoritos" />
+            android:label="Favoritos" />
         <activity
             android:name=".Xpress"
             android:label="Xpress by Factory" />
@@ -82,11 +82,11 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyB7TlkGbAgpbxCoEd1e5jjcl5SlU_vD8fM" />
 
         <activity
             android:name=".PolloMapas"
-            android:label="@string/title_activity_poolo_mapas"></activity>
+            android:label="@string/title_activity_mapas_pollo"></activity>
     </application>
 
 </manifest>
