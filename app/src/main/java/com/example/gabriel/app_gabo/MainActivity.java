@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         Iniciar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+
                 // Perform action on click
                 DatabaseHandler db = new DatabaseHandler(v.getContext());
                 EditText user = (EditText) findViewById(R.id.txtUsuario);
