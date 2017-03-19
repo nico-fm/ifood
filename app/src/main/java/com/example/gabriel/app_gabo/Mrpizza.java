@@ -27,15 +27,15 @@ public class Mrpizza extends AppCompatActivity {
  super.onCreate(savedInstanceState);
  setContentView(R.layout.activity_Mrpizza);
 
- btnPedidoXpress=(Button)findViewById(R.id.btnPedidoMrpizza);
- btnBuscarMapaXpress=(Button)findViewById(R.id.btnBuscarMapaMrpizza);
- btnXpressPagina=(Button)findViewById(R.id.btnMrpizzaPagina);
+ btnPedidoMrpizza=(Button)findViewById(R.id.btnPedidoMrpizza);
+ btnBuscarMapaMrpizza=(Button)findViewById(R.id.btnBuscarMapaMrpizza);
+ btnMrpizzaPagina=(Button)findViewById(R.id.btnMrpizzaPagina);
 
 
 
 
 
- btnXpressPagina.setOnClickListener(new View.OnClickListener() {
+ btnMrpizzaPagina.setOnClickListener(new View.OnClickListener() {
  @Override
  public void onClick(View view) {
 

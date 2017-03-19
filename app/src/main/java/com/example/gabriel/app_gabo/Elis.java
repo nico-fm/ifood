@@ -19,24 +19,24 @@ public class Elis extends AppCompatActivity {
 /**
  *  private Button btnBuscarElis;
  private Button btnPedidoElis;
- private Button btnElisPlanet;
+ private Button btnElisPagina;
 
 
 
  @Override
  protected void onCreate(Bundle savedInstanceState) {
  super.onCreate(savedInstanceState);
- setContentView(R.layout.activity_Planet);
+ setContentView(R.layout.activity_Elis);
 
- btnPedidoXpress=(Button)findViewById(R.id.btnPedidoElis);
- btnBuscarMapaXpress=(Button)findViewById(R.id.btnBuscarMapaElis);
- btnXpressPagina=(Button)findViewById(R.id.btnElisPagina);
-
-
+ btnPedidoElis=(Button)findViewById(R.id.btnPedidoElis);
+ btnBuscarMapaElis=(Button)findViewById(R.id.btnBuscarMapaElis);
+ btnElisPagina=(Button)findViewById(R.id.btnElisPagina);
 
 
 
- btnXpressPagina.setOnClickListener(new View.OnClickListener() {
+
+
+ btnElisPagina.setOnClickListener(new View.OnClickListener() {
  @Override
  public void onClick(View view) {
 

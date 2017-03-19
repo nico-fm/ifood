@@ -28,21 +28,17 @@ public class Planet extends AppCompatActivity {
  super.onCreate(savedInstanceState);
  setContentView(R.layout.activity_Planet);
 
- btnPedidoXpress=(Button)findViewById(R.id.btnPedidoPlanet);
- btnBuscarMapaXpress=(Button)findViewById(R.id.btnBuscarMapaPlanet);
- btnXpressPagina=(Button)findViewById(R.id.btnPlanetPagina);
+ btnPedidoPlanet=(Button)findViewById(R.id.btnPedidoPlanet);
+ btnBuscarMapaPlanet=(Button)findViewById(R.id.btnBuscarMapaPlanet);
+ btnPlanetPagina=(Button)findViewById(R.id.btnPlanetPagina);
 
 
 
 
 
- btnXpressPagina.setOnClickListener(new View.OnClickListener() {
+ btnPlanetPagina.setOnClickListener(new View.OnClickListener() {
  @Override
  public void onClick(View view) {
-
-
-
-
 
  Uri uriUrl = Uri.parse("http://www.planetpizza.com.bo/");
 
