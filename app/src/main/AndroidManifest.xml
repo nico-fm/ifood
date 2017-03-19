@@ -29,7 +29,7 @@
             android:name=".Comida"
             android:label="Comida" />
         <activity
-            android:name=".Vegetariano"
+            android:name=".Vegetariana"
             android:label="Vegetariano" />
         <activity
             android:name=".Promociones"

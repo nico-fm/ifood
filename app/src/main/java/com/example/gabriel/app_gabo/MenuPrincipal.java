@@ -1,6 +1,5 @@
 package com.example.gabriel.app_gabo;
 
-import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -13,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class MenuPrincipal extends AppCompatActivity {
@@ -58,7 +56,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnVegetariana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,Vegetariano.class);
+                Intent intent=new Intent(context,Vegetariana.class);
                 startActivity(intent);
             }
         });
