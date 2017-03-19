@@ -2,19 +2,11 @@ package com.example.gabriel.app_gabo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.app.Activity;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class Comida extends AppCompatActivity {
 
@@ -29,7 +21,7 @@ public class Comida extends AppCompatActivity {
             "Pizza Eli's",
             "Mr. Pizza",
             "Planet Pizza",
-            "Burger King"
+            "BurgerKing King"
     };
     int[] imagenes = {
             R.drawable.pollo,
@@ -85,7 +77,7 @@ public class Comida extends AppCompatActivity {
 
                 }
                 if (position == 5){
-                    Intent intent=new Intent(context,Burger.class);
+                    Intent intent=new Intent(context,BurgerKing.class);
                     startActivity(intent);
 
                 }

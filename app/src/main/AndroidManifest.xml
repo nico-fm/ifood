@@ -59,7 +59,7 @@
             android:name=".Planet"
             android:label="Planet Pizzaa" />
         <activity
-            android:name=".Burger"
+            android:name=".BurgerKing"
             android:label="Burger King" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for

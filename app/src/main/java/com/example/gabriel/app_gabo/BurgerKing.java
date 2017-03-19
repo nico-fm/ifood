@@ -3,7 +3,7 @@ package com.example.gabriel.app_gabo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Burger extends AppCompatActivity {
+public class BurgerKing extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
