@@ -34,7 +34,7 @@ public class SignUp extends Activity {
                 DatabaseHandler db = new DatabaseHandler(v.getContext());
                 Intent toMain = new Intent(SignUp.this, MainActivity.class);
                 EditText user = (EditText) findViewById(R.id.username);
-                EditText pass = (EditText) findViewById(R.id.password);
+                EditText pass = (EditText) findViewById(R.id.editTextPassword);
                 String userValue = user.getText().toString();
                 String passValue = pass.getText().toString();
                 int charUserLength = userValue.length();

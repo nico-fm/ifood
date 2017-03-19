@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MenuPrincipal extends AppCompatActivity {
 
 
@@ -26,11 +28,20 @@ public class MenuPrincipal extends AppCompatActivity {
     private Button btnFavoritos;
     private Button btnCerrar;
 
+    private FirebaseAuth firebaseAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_principal);
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        if(firebaseAuth.getCurrentUser()==null){
+            finish();
+            Intent main=new Intent(context,MainActivity.class);
+            startActivity(main);
+        }
 
         context=this;
 
@@ -112,6 +123,7 @@ public class MenuPrincipal extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                firebaseAuth.signOut();
                                 Toast.makeText(getApplicationContext(),"Sesion Cerrada",Toast.LENGTH_SHORT).show();
                                 Intent a =new Intent (getApplicationContext(),MainActivity.class);
                                 finish();
