@@ -70,5 +70,8 @@ public class PolloMapas extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(pollosoca).title("Pollos Copacaba Socabaya"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollosoca));
 
+
+
+
     }
 }
