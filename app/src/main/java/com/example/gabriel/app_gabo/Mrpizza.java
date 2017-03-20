@@ -29,11 +29,21 @@ public class Mrpizza extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Uri uriUrl = Uri.parse("http://www.misterpizza.com.mx/");
+                Uri uriUrl = Uri.parse("https://www.facebook.com/mrpizzalp/");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(intent);
 
+            }
+        });
+        btnBuscarMapaMr.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(Mrpizza.this,MrPizzaMapas.class);
+                startActivity(inten);
             }
         });
     }

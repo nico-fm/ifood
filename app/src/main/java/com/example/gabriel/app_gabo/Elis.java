@@ -43,6 +43,16 @@ public class Elis extends AppCompatActivity {
 
          }
      });
+     btnBuscarElis.setOnClickListener(new View.OnClickListener(){
+
+         @Override
+         public void onClick(View v) {
+
+
+             Intent inten = new Intent(Elis.this,ElisMapas.class);
+             startActivity(inten);
+         }
+     });
  }
  }
 

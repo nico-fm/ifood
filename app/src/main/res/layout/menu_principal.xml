@@ -13,18 +13,18 @@
     android:padding="10sp">
 
     <Button
-        android:text=".Comida"
+        android:id="@+id/btnComidaRapida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/btnComidaRapida"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textScaleX="1.5"
+        android:layout_marginTop="50dp"
         android:background="@android:color/holo_green_light"
         android:padding="15dp"
+        android:text="COMIDA RAPIDA"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
-        android:textColor="@color/cast_expanded_controller_background_color" />
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textScaleX="1.5" />
 
     <Button
         android:text="Comida Vegetariana"

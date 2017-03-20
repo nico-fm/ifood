@@ -21,7 +21,7 @@ public class Comida extends AppCompatActivity {
             "Pizza Eli's",
             "Mr. Pizza",
             "Planet Pizza",
-            "BurgerKing King"
+            "Burger King"
     };
     int[] imagenes = {
             R.drawable.pollo,

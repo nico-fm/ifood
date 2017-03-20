@@ -37,6 +37,16 @@ public class Planet extends AppCompatActivity {
 
             }
         });
+        btnBuscarPlanet.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(Planet.this,PlanetMapas.class);
+                startActivity(inten);
+            }
+        });
     }
 }
 

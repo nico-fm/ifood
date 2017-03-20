@@ -51,8 +51,8 @@ public class Xpress extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                /*Intent inten = new Intent(Xpress.this,XpressMapa.class);
-                startActivity(inten);*/
+                Intent inten = new Intent(Xpress.this,XpressMapas.class);
+                startActivity(inten);
             }
         });
     }

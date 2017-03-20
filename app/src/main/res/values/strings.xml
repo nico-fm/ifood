@@ -92,6 +92,11 @@
     </string>
     <string name="title_activity_pollo_mapas">Map</string>
     <string name="title_activity_xpress_mapa">Map</string>
+    <string name="title_activity_xpress_mapas">Map</string>
+    <string name="title_activity_elis_mapas">Map</string>
+    <string name="title_activity_mr_pizza_mapas">Map</string>
+    <string name="title_activity_planet_mapas">Map</string>
+    <string name="title_activity_burger_king_mapas">Map</string>
 
 
 </resources>

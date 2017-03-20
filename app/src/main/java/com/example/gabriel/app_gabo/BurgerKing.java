@@ -39,6 +39,16 @@ public class BurgerKing extends AppCompatActivity {
 
                 }
             });
+        btnBuscarBurger.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(BurgerKing.this,BurgerKingMapas.class);
+                startActivity(inten);
+            }
+        });
         }
     }
 
