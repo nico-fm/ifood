@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ListViewAdapter extends BaseAdapter {
+
     // Declare Variables
     Context context;
     String[] titulos;
