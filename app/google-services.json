@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1050389442688",
-    "firebase_url": "https://ifoodg.firebaseio.com",
-    "project_id": "ifoodg",
-    "storage_bucket": "ifoodg.appspot.com"
+    "project_number": "37868430159",
+    "firebase_url": "https://basededatos-ifood.firebaseio.com",
+    "project_id": "basededatos-ifood",
+    "storage_bucket": "basededatos-ifood.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1050389442688:android:b511968ac8741c9a",
+        "mobilesdk_app_id": "1:37868430159:android:b511968ac8741c9a",
         "android_client_info": {
           "package_name": "com.example.gabriel.app_gabo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1050389442688-1i6m5ik5vicanj3524r3tu035d26fvc6.apps.googleusercontent.com",
+          "client_id": "37868430159-rmp75ninhmuljob57m954f3fsc78klm8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDqzHCfZ5C3FflMaRUqCEPq5QuNpewr544"
+          "current_key": "AIzaSyBFm4qYHqKuEjBUjsUAhBT15BpvCGBn6pA"
         }
       ],
       "services": {
