@@ -91,6 +91,7 @@
         completions."
     </string>
     <string name="title_activity_pollo_mapas">Map</string>
+    <string name="title_activity_xpress_mapa">Map</string>
 
 
 </resources>

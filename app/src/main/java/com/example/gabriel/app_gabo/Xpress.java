@@ -45,5 +45,15 @@ public class Xpress extends AppCompatActivity {
 
             }
         });
+        btnBuscarMapaXpress.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                /*Intent inten = new Intent(Xpress.this,XpressMapa.class);
+                startActivity(inten);*/
+            }
+        });
     }
 }
