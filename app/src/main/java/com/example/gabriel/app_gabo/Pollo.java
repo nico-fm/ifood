@@ -107,8 +107,8 @@ public class Pollo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                    Intent inten = new Intent(Pollo.this,PolloMapas.class);
-                    startActivity(inten);
+                   Intent inten = new Intent(Pollo.this,PolloMapas.class);
+                   startActivity(inten);
 
                 }
 
