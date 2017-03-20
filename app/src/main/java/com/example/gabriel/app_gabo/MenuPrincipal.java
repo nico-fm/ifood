@@ -53,9 +53,6 @@ public class MenuPrincipal extends AppCompatActivity {
         btnFavoritos=(Button)findViewById(R.id.btnFavoritos);
         btnCerrar=(Button) findViewById(R.id.btnCerrar);
 
-        SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
-        String usuario_almacenado = prefs.getString("usuario","no");
-
 
         btnComidaRapida.setOnClickListener(new View.OnClickListener() {
             @Override
