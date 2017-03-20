@@ -22,7 +22,6 @@ import android.widget.TextView;
 
 public class ListViewAdapter extends BaseAdapter {
 
-    //De nuevo fue agregada la clase
     // Declare Variables
     Context context;
     String[] titulos;
