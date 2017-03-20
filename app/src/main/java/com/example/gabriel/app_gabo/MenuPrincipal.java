@@ -33,6 +33,7 @@ public class MenuPrincipal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_principal);
         firebaseAuth = FirebaseAuth.getInstance();
