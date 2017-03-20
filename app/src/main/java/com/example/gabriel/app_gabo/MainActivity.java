@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    //:)
 
     private EditText txtUsuario;
     private EditText txtPassword;
