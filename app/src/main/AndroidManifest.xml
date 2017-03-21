@@ -2,14 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gabriel.app_gabo">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,69 +21,66 @@
             </intent-filter>
         </activity>
         <activity android:name=".MenuPrincipal" />
-        <activity android:name=".Comida"
-            android:label="Comida"
-            />
-        <activity android:name=".Vegetariana"
-            android:label="Vegetariano"
-            />
-        <activity android:name=".Promociones"
-            android:label="Promociones"
-            />
-        <activity android:name=".BuscarRestaurant"
-            android:label="BuscarRestaurant"
-            />
-        <activity android:name=".Favoritos"
-            android:label="Favoritos"
-            />
-        <activity android:name=".Xpress"
-            android:label="Xpress by Factory"
-            />
-        <activity android:name=".Pollo"
-            android:label="Pollos Copacabana"
-            />
-        <activity android:name=".Registro"
-            android:label="Registrarse"
-            />
-        <activity android:name=".Elis"
-            android:label="Pizza Eli&apos;s"
-            />
-        <activity android:name=".Mrpizza"
-            android:label="Mr. Pizza"
-            />
-        <activity android:name=".Planet"
-            android:label="Planet Pizza"
-            />
-        <activity android:name=".BurgerKing"
-            android:label="Burger King"
-            />
+        <activity
+            android:name=".Comida"
+            android:label="Comida" />
+        <activity
+            android:name=".Vegetariana"
+            android:label="Vegetariano" />
+        <activity
+            android:name=".Promociones"
+            android:label="Promociones" />
+        <activity
+            android:name=".BuscarRestaurant"
+            android:label="BuscarRestaurant" />
+        <activity
+            android:name=".Favoritos"
+            android:label="Favoritos" />
+        <activity
+            android:name=".Xpress"
+            android:label="Xpress by Factory" />
+        <activity
+            android:name=".Pollo"
+            android:label="Pollos Copacabana" />
+        <activity
+            android:name=".Registro"
+            android:label="Registrarse" />
+        <activity
+            android:name=".Elis"
+            android:label="Pizza Eli&apos;s" />
+        <activity
+            android:name=".Mrpizza"
+            android:label="Mr. Pizza" />
+        <activity
+            android:name=".Planet"
+            android:label="Planet Pizza" />
+        <activity
+            android:name=".BurgerKing"
+            android:label="Burger King" />
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBfrhhymckyq0beRsegy3ympslynr_cIGc" />
 
-        <activity android:name=".PolloMapas"
-            android:label="@string/title_activity_mapas_pollo">
-        </activity>
-
-        <activity android:name=".XpressMapas"
-            android:label="@string/title_activity_xpress_mapas">
-        </activity>
-        <activity android:name=".ElisMapas"
-            android:label="@string/title_activity_elis_mapas">
-        </activity>
-
-        <activity android:name=".MrPizzaMapas"
-            android:label="@string/title_activity_mr_pizza_mapas">
-        </activity>
-        <activity android:name=".PlanetMapas"
-            android:label="@string/title_activity_planet_mapas">
-        </activity>
-        <activity android:name=".BurgerKingMapas"
-            android:label="@string/title_activity_burger_king_mapas">
-        </activity>
-
-
-
-
+        <activity
+            android:name=".PolloMapas"
+            android:label="@string/title_activity_mapas_pollo" />
+        <activity
+            android:name=".XpressMapas"
+            android:label="@string/title_activity_xpress_mapas" />
+        <activity
+            android:name=".ElisMapas"
+            android:label="@string/title_activity_elis_mapas" />
+        <activity
+            android:name=".MrPizzaMapas"
+            android:label="@string/title_activity_mr_pizza_mapas" />
+        <activity
+            android:name=".PlanetMapas"
+            android:label="@string/title_activity_planet_mapas" />
+        <activity
+            android:name=".BurgerKingMapas"
+            android:label="@string/title_activity_burger_king_mapas" />
+        <activity android:name=".SucursalPollos"></activity>
     </application>
+
 </manifest>
