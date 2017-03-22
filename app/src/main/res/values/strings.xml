@@ -76,6 +76,88 @@
 
     </integer-array>
 
+    <string-array name="nombre_lista_BK_hamburguesas">
+
+        <item>Seleccionar</item>
+        <item>BBQ Bacon King.Sandwich</item>
+        <item>Whopper.Sandwich</item>
+        <item>Doble Whopper.Sandwich</item>
+        <item>Whopper Jr..Sandwich</item>
+        <item>Bacon King.Sandwich </item>
+        <item>Extra Long Cheeseburger</item>
+        <item>HomeStyle Cheesburger</item>
+        <item>Bacon &amp; Cheese Whopper.Sandwich</item>
+        <item>Hamburger </item>
+        <item>DoubleCheese Burger </item>
+        <item>Cheeseburger </item>
+        <item>Cheeseburger </item>
+        <item>Bacon Cheeseburger </item>
+        <item>Bacon Double Cheeseburger </item>
+
+
+    </string-array>
+
+
+
+    <string-array name="nombre_lista_Piza_elis">
+
+        <item>Seleccionar</item>
+        <item>Duo</item>
+        <item>Pequena</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+        <item>Familiar</item>
+        <item>Super</item>
+        <item>Super 50</item>
+        <item>Jumbo</item>
+        <item>Interminable</item>
+
+
+    </string-array>
+    <string-array name="nombre_lista_sabor_clasico_elis">
+
+        <item>Sabor Clasico</item>
+        <item>Americano</item>
+        <item>Calabresa</item>
+        <item>Whopper.Sandwich</item>
+        <item>Cripy</item>
+        <item>Napolitana</item>
+        <item>Muzzarella</item>
+        <item>Pepperoni</item>
+        <item>Pollo y Choclo</item>
+        <item>Tropical</item>
+        <item>Vegetariana</item>
+
+
+    </string-array>
+    <string-array name="nombre_lista_sabor_premium_elis">
+
+        <item>Sabor Premium</item>
+        <item>4 Estaciones</item>
+        <item>Barbecue</item>
+        <item>Criolla</item>
+        <item>Espanola</item>
+        <item>Hawaiana</item>
+        <item>Jamon Delux</item>
+        <item>New York</item>
+        <item>Suprema</item>
+        <item>Tocino Delux</item>
+
+    </string-array>
+    <string-array name="nombre_lista_sabor_gourmet_elis">
+
+        <item>Sabor Gourmet</item>
+        <item>4 Quesos</item>
+        <item>Alfredo</item>
+        <item>Carnivora</item>
+        <item>Filet Mignon</item>
+        <item>Kitchen Sink</item>
+        <item>Pique</item>
+        <item>Siciliana</item>
+
+
+    </string-array>
+
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
