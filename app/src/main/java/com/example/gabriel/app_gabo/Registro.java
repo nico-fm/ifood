@@ -22,7 +22,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
     private Button reg;
     private EditText editTextEmail ;
     private EditText editTextPassword;
-    private EditText editTextNombre;
+    private EditText editTextName;
     private EditText editTextConfirmPassword;
     private TextView home;
     private ProgressDialog progressDialog;
@@ -40,6 +40,9 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
         reg = (Button)findViewById(R.id.reg);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        editTextName=(EditText)findViewById(R.id.editTextName);
+        editTextConfirmPassword=(EditText)findViewById(R.id.editTextConfirmPassword);
+
         home = (TextView) findViewById(R.id.home);
         reg.setOnClickListener(this);
         home.setOnClickListener(this);
@@ -49,6 +52,8 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
     private void validacionUsuario(){
         String email = editTextEmail.getText().toString().trim();
         String password= editTextPassword.getText().toString().trim();
+        String confirmarPass= editTextConfirmPassword.getText().toString().trim();
+        String nombre = editTextName.getText().toString().trim();
 
         if(TextUtils.isEmpty(email)){
             Toast.makeText(this,"Ingresa tu email",Toast.LENGTH_SHORT).show();
@@ -58,6 +63,11 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
             Toast.makeText(this,"Ingresa un password",Toast.LENGTH_SHORT).show();
             return;
         }
+        if(!TextUtils.equals(password,confirmarPass)){
+            Toast.makeText(this,"Las contraseñas no coinciden",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         progressDialog.setMessage("Registrando Usuario....");
         progressDialog.show();
         firebaseAuth.createUserWithEmailAndPassword(email,password)
