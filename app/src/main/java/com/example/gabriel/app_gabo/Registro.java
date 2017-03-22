@@ -22,6 +22,8 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
     private Button reg;
     private EditText editTextEmail ;
     private EditText editTextPassword;
+    private EditText editTextNombre;
+    private EditText editTextConfirmPassword;
     private TextView home;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;

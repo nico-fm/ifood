@@ -12,10 +12,11 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
 
         <TextView
-            android:paddingTop="100dp"
+            android:paddingTop="20dp"
             android:layout_marginBottom="25dp"
             android:textColor="@color/colorAccent"
             android:text="Registrarse"
@@ -67,7 +68,35 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
         android:padding="10sp" />
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Nombre"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentStart="true" />
 
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <EditText
         android:hint="Password"
         android:padding="15dp"
@@ -78,22 +107,26 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:textStyle="normal|bold"
-        android:layout_above="@+id/reg"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="34dp" />
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/editTextConfirmPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextPassword"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="23dp"
         android:background="#FFFFFF"
-        android:hint="Email"
+        android:hint="Confirmar Password"
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textSize="15sp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/reg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
 
 </RelativeLayout>
