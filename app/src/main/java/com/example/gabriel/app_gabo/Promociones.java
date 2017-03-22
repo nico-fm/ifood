@@ -20,15 +20,15 @@ public class Promociones extends AppCompatActivity {
 
         ListView lista=(ListView)findViewById(R.id.ListPromociones);
 
-        //Agregamos algunas filas
+
         ArrayList<Item> items=new ArrayList<Item>();
         items.add(new Item(1, "Pollos Copacaban", "VEN Y DISFRUTA EL DIA DEL PADRE CON UN DESCUENTO ESPECIAL", R.drawable.pollo));
         items.add(new Item(1, "Burguer King", "LLEVATE 1 COMBO STACKER(DOBLE) POR 38 Bs.", R.drawable.burger));
 
 
-        //Instanciamos el adaptador
+
         AdaptadorItem adaptador=new AdaptadorItem(Promociones.this, items);
-        //Utilizamos el adaptador
+
         lista.setAdapter(adaptador);
 
 
