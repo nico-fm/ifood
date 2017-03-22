@@ -54,9 +54,21 @@ public class MrPizzaMapas extends FragmentActivity implements OnMapReadyCallback
 
         mMap.setMinZoomPreference(12);
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        LatLng avaroa = new LatLng(-16.51013565542089,-68.12625841644444);
+        mMap.addMarker(new MarkerOptions().position(avaroa).title("Mr. Pizza Plaza Avaroa"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(avaroa));
+
+        LatLng san = new LatLng(-16.542316800645263,-68.08091299083867);
+        mMap.addMarker(new MarkerOptions().position(san).title("Mr. Pizza San Miguel"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(san));
+
+        LatLng mira = new LatLng(-16.49862666988389,-68.12098888155856);
+        mMap.addMarker(new MarkerOptions().position(mira).title("Mr. Pizza Miraflores"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(mira));
+
+       /* LatLng avaroa = new LatLng(-16.51013565542089,-68.12625841644444);
+        mMap.addMarker(new MarkerOptions().position(avaroa).title("Mr. Pizza Plaza Avaroa"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(avaroa));*/
     }
 }

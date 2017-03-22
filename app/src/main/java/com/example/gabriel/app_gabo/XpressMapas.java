@@ -55,8 +55,27 @@ public class XpressMapas extends FragmentActivity implements OnMapReadyCallback 
         mMap.setMinZoomPreference(12);
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng camacho = new LatLng(-16.500415972809623, -68.13152627494969);
+        mMap.addMarker(new MarkerOptions().position(camacho).title("Xpress Camacho"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(camacho));
+
+        LatLng multicine = new LatLng(-16.510835134832732, -68.1220352783505);
+        mMap.addMarker(new MarkerOptions().position(multicine).title("Xpress Multicine"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(multicine));
+
+
+        LatLng mega = new LatLng(-16.53298314937157, -68.08727384951749);
+        mMap.addMarker(new MarkerOptions().position(mega).title("Xpress Megacenter"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(mega));
+
+        LatLng aero = new LatLng(-16.50873926064417, -68.1767147913281);
+        mMap.addMarker(new MarkerOptions().position(aero).title("Xpress Aeropuerto"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(aero));
+
+
+
+
+
+
     }
 }
