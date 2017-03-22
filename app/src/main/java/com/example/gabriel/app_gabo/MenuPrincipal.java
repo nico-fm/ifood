@@ -72,7 +72,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPromociones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Promociones.class);
+               Intent intent = new Intent(getApplicationContext(), Promociones.class);
 
                 PendingIntent pIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
@@ -87,6 +87,7 @@ public class MenuPrincipal extends AppCompatActivity {
                 NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 notificationManager.notify(0, notificacion);
                 startActivity(intent);
+
 
             }
         });

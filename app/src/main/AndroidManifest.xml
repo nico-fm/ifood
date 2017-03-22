@@ -85,6 +85,10 @@
             android:name=".BurgerKingMapas"
             android:label="@string/title_activity_burger_king_mapas" />
         <activity android:name=".SucursalPollos"></activity>
+
+        <application>
+            <activity android:name=".ListViewAdapterPromo"></activity>
+        </application>
     </application>
 
 </manifest>
