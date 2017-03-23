@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:id="@+id/SpinnerPollo"
-        android:layout_below="@+id/lblPollo"
+        android:layout_below="@+id/lbPollo"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
-        android:id="@+id/lblPollo"
+        android:id="@+id/lbPollo"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="18dp" />
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/SpinnerPollo"
-        android:layout_alignStart="@+id/lblPollo"
+        android:layout_alignStart="@+id/lbPollo"
         android:layout_marginTop="12dp"
         android:id="@+id/lblHamPollo" />
 
@@ -123,8 +123,8 @@
         android:text="info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblPollo"
-        android:layout_alignBottom="@+id/lblPollo"
+        android:layout_alignBaseline="@+id/lbPollo"
+        android:layout_alignBottom="@+id/lbPollo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

@@ -9,12 +9,6 @@ import android.widget.Button;
 
 public class Elis extends AppCompatActivity {
 
-
-
-
-
-
-
  private Button btnBuscarElis;
  private Button btnPedidoElis;
  private Button btnElisPagina;

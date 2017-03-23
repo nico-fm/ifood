@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombre_lista_ensaladas">nombre_lista_ensaladas</string-array>
+    <string-array name="nombre_lista_almuerzos">nombre_lista_almuerzos</string-array>
+    <string-array name="nombre_lista_postres">nombre_lista_postres</string-array>
+    <string-array name="lista_ensaladas">lista_ensaladas</string-array>
+    <string-array name="lista_almuerzos">lista_almuerzos</string-array>
+    <string-array name="lista_postres">lista_postres</string-array>
+</resources>
