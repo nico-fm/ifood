@@ -38,7 +38,7 @@ public class AdaptadorItem extends BaseAdapter
 		return items.get(posicion).getId();
 	}
 
-	//El viewHolder guardara los elementos visuales
+	//El viewHolder guardara los elementos visualess
 	//para que no sean declarados por cada fila
 	static class ViewHolder{
 		TextView titulo;
