@@ -47,6 +47,18 @@ public class Planet extends AppCompatActivity {
                 startActivity(inten);
             }
         });
+        btnPedidoPlanet.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(Planet.this,PlanerPedido.class);
+                startActivity(inten);
+            }
+        });
+
+
     }
 }
 

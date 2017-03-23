@@ -85,6 +85,16 @@ public class Elis extends AppCompatActivity {
              startActivity(inten);
          }
      });
+     btnPedidoElis.setOnClickListener(new View.OnClickListener(){
+
+         @Override
+         public void onClick(View v) {
+
+
+             Intent inten = new Intent(Elis.this,ElisPedido.class);
+             startActivity(inten);
+         }
+     });
  }
  }
 

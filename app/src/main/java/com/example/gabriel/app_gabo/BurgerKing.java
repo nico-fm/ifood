@@ -58,6 +58,19 @@ public class BurgerKing extends AppCompatActivity {
                 startActivity(inten);
             }
         });
+
+         btnPedidoBurger.setOnClickListener(new View.OnClickListener() {
+
+             @Override
+             public void onClick(View v) {
+
+
+                 Intent inten = new Intent(BurgerKing.this, BurgerKingPedido.class);
+                 startActivity(inten);
+             }
+
+             ;
+         });
         }
     }
 

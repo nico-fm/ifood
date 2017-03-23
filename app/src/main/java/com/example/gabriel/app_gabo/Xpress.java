@@ -15,6 +15,7 @@ public class Xpress extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,17 @@ public class Xpress extends AppCompatActivity {
 
 
                 Intent inten = new Intent(Xpress.this,XpressMapas.class);
+                startActivity(inten);
+            }
+        });
+
+        btnPedidoXpress.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(Xpress.this,XpressPedido.class);
                 startActivity(inten);
             }
         });

@@ -32,6 +32,7 @@ public class Pollo extends AppCompatActivity {
     private Button btnBuscarMapaPollo;
     private Button btnPolloPagina;
     private Button botonInfo;
+    private Button btnPedidoPollo;
     Spinner spinner1,
             spinner2,
             spinner3;
@@ -97,6 +98,7 @@ public class Pollo extends AppCompatActivity {
         btnBuscarMapaPollo = (Button) findViewById(R.id.btnBuscarMapaPollo);
         btnPolloPagina = (Button) findViewById(R.id.btnPolloPagina);
         botonInfo =(Button) findViewById(R.id.btnInfo);
+        btnPedidoPollo = (Button)findViewById(R.id.btnPedidoPollo);
 
 
         btnPolloPagina.setOnClickListener(new View.OnClickListener() {
@@ -134,6 +136,17 @@ public class Pollo extends AppCompatActivity {
                    startActivity(inten);
 
                 }
+
+        });
+
+        btnPedidoPollo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent inten = new Intent(Pollo.this,PolloPedido.class);
+                startActivity(inten);
+
+            }
 
         });
 

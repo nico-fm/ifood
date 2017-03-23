@@ -47,6 +47,17 @@ public class Mrpizza extends AppCompatActivity {
                 startActivity(inten);
             }
         });
+
+        btnPedidoMr.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+
+                Intent inten = new Intent(Mrpizza.this,MrPedidos.class);
+                startActivity(inten);
+            }
+        });
     }
 }
 
