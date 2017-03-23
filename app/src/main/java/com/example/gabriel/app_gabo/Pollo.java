@@ -12,6 +12,7 @@ import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -46,16 +47,15 @@ public class Pollo extends AppCompatActivity {
     String[] extras;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pollo);
 
-        pollo=getResources().getStringArray(R.array.nombre_lista_pollo);
-        hamburguesa=getResources().getStringArray(R.array.nombre_lista_hamburguesa);
-        extras=getResources().getStringArray(R.array.nombre_lista_extras);
+        pollo = getResources().getStringArray(R.array.nombre_lista_pollo);
+        hamburguesa = getResources().getStringArray(R.array.nombre_lista_hamburguesa);
+        extras = getResources().getStringArray(R.array.nombre_lista_extras);
 
         imgp = getResources().obtainTypedArray(R.array.lista_pollo);
         imgh = getResources().obtainTypedArray(R.array.lista_hamburguesa);
@@ -81,7 +81,7 @@ public class Pollo extends AppCompatActivity {
         ArrayAdapter<String> extraslist = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, extras);
 
 
-     // spinner1.setDropDownViewResources(android.R.layout.simple_spinner_dropdown_item);
+        // spinner1.setDropDownViewResources(android.R.layout.simple_spinner_dropdown_item);
 
 
         spinner1.setAdapter(polloList);
@@ -91,7 +91,7 @@ public class Pollo extends AppCompatActivity {
 
         btnBuscarMapaPollo = (Button) findViewById(R.id.btnBuscarMapaPollo);
         btnPolloPagina = (Button) findViewById(R.id.btnPolloPagina);
-        botonInfo =(Button) findViewById(R.id.btnInfo);
+        botonInfo = (Button) findViewById(R.id.btnInfo);
 
 
         btnPolloPagina.setOnClickListener(new View.OnClickListener() {
@@ -108,19 +108,19 @@ public class Pollo extends AppCompatActivity {
         botonInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent intent = new Intent(Pollo.this,SucursalPollos.class);
+                Intent intent = new Intent(Pollo.this, InfoPollosMain.class);
                 startActivity(intent);
             }
 
-            });
+        });
         btnBuscarMapaPollo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                   Intent inten = new Intent(Pollo.this,PolloMapas.class);
-                   startActivity(inten);
+                Intent inten = new Intent(Pollo.this, PolloMapas.class);
+                startActivity(inten);
 
-                }
+            }
 
         });
 
