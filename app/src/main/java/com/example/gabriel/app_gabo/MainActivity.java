@@ -14,6 +14,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class MainActivity extends Activity {
 
         Button Iniciar = (Button) findViewById(R.id.btnIniciar);
         TextView Registrarse = (TextView) findViewById(R.id.txtRegistrarse);
+        ImageView imageView4 = (ImageView)findViewById(R.id.imageView4);
 
         Registrarse.setPaintFlags(Registrarse.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
