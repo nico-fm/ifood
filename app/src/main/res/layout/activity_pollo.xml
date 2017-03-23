@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:id="@+id/SpinnerPollo"
-        android:layout_below="@+id/lblPollo"
+        android:layout_below="@+id/lbPollo"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
-        android:id="@+id/lblPollo"
+        android:id="@+id/lbPollo"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="18dp" />
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/SpinnerPollo"
-        android:layout_alignStart="@+id/lblPollo"
+        android:layout_alignStart="@+id/lbPollo"
         android:layout_marginTop="12dp"
         android:id="@+id/lblHamPollo" />
 
@@ -93,22 +93,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnBuscarMapaPollo"
-        android:paddingRight="25sp"
-        android:paddingLeft="25sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:paddingRight="25sp"
+        android:paddingLeft="25sp" />
 
     <Button
         android:text="Visitar Pagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnPolloPagina"
-        android:paddingLeft="37sp"
-        android:paddingRight="37sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="37sp"
+        android:paddingRight="37sp" />
 
     <Button
         android:text="HACER PEDIDO"
@@ -117,18 +117,15 @@
         android:id="@+id/btnPedidoPollo"
         android:layout_above="@+id/btnBuscarMapaPollo"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp" />
+        android:layout_alignParentStart="true" />
     <Button
         android:id="@+id/btnInfo"
         android:text="info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:layout_above="@+id/btnPedidoPollo"
+        android:layout_alignBaseline="@+id/lbPollo"
+        android:layout_alignBottom="@+id/lbPollo"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="22dp"
-        android:layout_marginEnd="22dp" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

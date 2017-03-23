@@ -32,12 +32,6 @@ public class Xpress extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-
-                //https://www.facebook.com/factorylapaz
-                //https://factory.com.bo
-
-
                 Uri uriUrl = Uri.parse("https://www.facebook.com/XpressbyFactory/");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);

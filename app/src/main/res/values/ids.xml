@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnPedidoCasadeSol" type="id">btnPedidoCasadeSol</item>
+    <item name="btnCasadeSolPagina" type="id">btnCasadeSolPagina</item>
+    <item name="btnPedidoNamaste" type="id">btnPedidoNamaste</item>
+    <item name="btnNamastepagina" type="id">btnNamastepagina</item>
+    <item name="btnPedidoTomateCafe" type="id">btnPedidoTomateCafe</item>
+    <item name="btnTomateCafepagina" type="id">btnTomateCafepagina</item>
+    <item name="btnPedidoVinapho" type="id">btnPedidoVinapho</item>
+    <item name="btnVinaphoPagina" type="id">btnVinaphoPagina</item>
+    <item name="btnVinaphopagina" type="id">btnVinaphopagina</item>
+    <item name="Spinnerensaladas" type="id">Spinnerensaladas</item>
+    <item name="Spinneralmuerzos" type="id">Spinneralmuerzos</item>
+    <item name="Spinnerpostres" type="id">Spinnerpostres</item>
+    <item name="imagen_postres" type="id">imagen_postres</item>
+    <item name="SpinnerEnsalada" type="id">SpinnerEnsalada</item>
+    <item name="txtListVegetariano" type="id">txtListVegetariano</item>
+    <item name="ImgVegetariano" type="id">ImgVegetariano</item>
+</resources>

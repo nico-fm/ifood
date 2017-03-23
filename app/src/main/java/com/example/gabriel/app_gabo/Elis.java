@@ -20,16 +20,9 @@ public class Elis extends AppCompatActivity {
             premium,
             gourmet;
 
-
-
-
  private Button btnBuscarElis;
  private Button btnPedidoElis;
  private Button btnElisPagina;
-
-
-
-
 
 
  @Override
