@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name="com.example.gabriel.app_gabo.PolloPedido" />
+        <activity android:name="com.example.gabriel.app_gabo.XpressPedido" />
+        <activity android:name="com.example.gabriel.app_gabo.ElisPedido" />
+        <activity android:name="com.example.gabriel.app_gabo.MrPedidos" />
+        <activity android:name="com.example.gabriel.app_gabo.PlanerPedido" />
+        <activity android:name="com.example.gabriel.app_gabo.BurgerKingPedido"></activity>
+    </application>
+
+</manifest>
