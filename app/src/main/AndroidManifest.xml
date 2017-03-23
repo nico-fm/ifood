@@ -64,19 +64,6 @@
             android:name=".BurgerKing"
             android:label="Burger King" />
 
-        <activity
-            android:name=".Vinapho"
-            android:label=" Vinapho" />
-        <activity
-            android:name=".Namaste"
-            android:label="Namaste" />
-        <activity
-            android:name=".TomateCafe"
-            android:label="Tomate Cafe" />
-        <activity
-            android:name=".CasadelSol"
-            android:label="Casa del Sol" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBfrhhymckyq0beRsegy3ympslynr_cIGc" />

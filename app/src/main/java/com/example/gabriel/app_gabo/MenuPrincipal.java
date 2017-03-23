@@ -65,8 +65,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnVegetariana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,Vegetariana.class);
-                startActivity(intent);
+
             }
         });
         btnPromociones.setOnClickListener(new View.OnClickListener() {
