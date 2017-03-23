@@ -76,31 +76,31 @@ public class PlanetMapas extends FragmentActivity implements OnMapReadyCallback 
 
 
         LatLng pinos = new LatLng(-16.545226724792336, -68.07453570362964);
-        mMap.addMarker(new MarkerOptions().position(pinos).title("Planet Pizza Los Pinos"));
+        mMap.addMarker(new MarkerOptions().position(pinos).title("Planet Pizza Los Pinos").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pinos));
 
         LatLng achumani = new LatLng(-16.530064040837395,-68.07356746237824);
-        mMap.addMarker(new MarkerOptions().position(achumani).title("Planet Pizza Achumani"));
+        mMap.addMarker(new MarkerOptions().position(achumani).title("Planet Pizza Achumani").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(achumani));
 
         LatLng obrajes = new LatLng(-16.52867807559329, -68.1039273862178);
-        mMap.addMarker(new MarkerOptions().position(obrajes).title("Planet Pizza Obrajes"));
+        mMap.addMarker(new MarkerOptions().position(obrajes).title("Planet Pizza Obrajes").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(obrajes));
 
         LatLng sopo = new LatLng(-16.514670654326668,-68.13008965294907);
-        mMap.addMarker(new MarkerOptions().position(sopo).title("Planet Pizza Sopocachi"));
+        mMap.addMarker(new MarkerOptions().position(sopo).title("Planet Pizza Sopocachi").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sopo));
 
         LatLng mira = new LatLng(-16.50479046907538, -68.1209647778804);
-        mMap.addMarker(new MarkerOptions().position(mira).title("Planet Pizza Miraflores"));
+        mMap.addMarker(new MarkerOptions().position(mira).title("Planet Pizza Miraflores").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mira));
 
         LatLng julio = new LatLng(-16.49775290796723, -68.16487790387222);
-        mMap.addMarker(new MarkerOptions().position(julio).title("Planet Pizza Zona 16 de Julio"));
+        mMap.addMarker(new MarkerOptions().position(julio).title("Planet Pizza Zona 16 de Julio").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(julio));
 
         LatLng satelite = new LatLng(-16.51826694723411, -68.15051199238846);
-        mMap.addMarker(new MarkerOptions().position(satelite).title("Planet Pizza Ciudad Satelite"));
+        mMap.addMarker(new MarkerOptions().position(satelite).title("Planet Pizza Ciudad Satelite").icon(BitmapDescriptorFactory.fromResource(R.drawable.planet_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(satelite));
 
         /*LatLng pinos = new LatLng(-16.545226724792336, -68.07453570362964);
@@ -130,7 +130,7 @@ public class PlanetMapas extends FragmentActivity implements OnMapReadyCallback 
         marcador = mMap.addMarker(new MarkerOptions()
                 .position(coordenadas)
                 .title("Mi Posicion")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.persona)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.user)));
         mMap.animateCamera(miUbicacion);
 
     }

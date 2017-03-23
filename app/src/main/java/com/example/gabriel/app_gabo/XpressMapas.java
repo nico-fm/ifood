@@ -70,20 +70,20 @@ public class XpressMapas extends FragmentActivity implements OnMapReadyCallback 
 
         // Add a marker in Sydney and move the camera
         LatLng camacho = new LatLng(-16.500415972809623, -68.13152627494969);
-        mMap.addMarker(new MarkerOptions().position(camacho).title("Xpress Camacho"));
+        mMap.addMarker(new MarkerOptions().position(camacho).title("Xpress Camacho").icon(BitmapDescriptorFactory.fromResource(R.drawable.xpress_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(camacho));
 
         LatLng multicine = new LatLng(-16.510835134832732, -68.1220352783505);
-        mMap.addMarker(new MarkerOptions().position(multicine).title("Xpress Multicine"));
+        mMap.addMarker(new MarkerOptions().position(multicine).title("Xpress Multicine").icon(BitmapDescriptorFactory.fromResource(R.drawable.xpress_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(multicine));
 
 
         LatLng mega = new LatLng(-16.53298314937157, -68.08727384951749);
-        mMap.addMarker(new MarkerOptions().position(mega).title("Xpress Megacenter"));
+        mMap.addMarker(new MarkerOptions().position(mega).title("Xpress Megacenter").icon(BitmapDescriptorFactory.fromResource(R.drawable.xpress_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mega));
 
         LatLng aero = new LatLng(-16.50873926064417, -68.1767147913281);
-        mMap.addMarker(new MarkerOptions().position(aero).title("Xpress Aeropuerto"));
+        mMap.addMarker(new MarkerOptions().position(aero).title("Xpress Aeropuerto").icon(BitmapDescriptorFactory.fromResource(R.drawable.xpress_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(aero));
 
 
@@ -99,7 +99,7 @@ public class XpressMapas extends FragmentActivity implements OnMapReadyCallback 
         marcador = mMap.addMarker(new MarkerOptions()
                 .position(coordenadas)
                 .title("Mi Posicion")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.persona)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.user)));
         mMap.animateCamera(miUbicacion);
 
     }
