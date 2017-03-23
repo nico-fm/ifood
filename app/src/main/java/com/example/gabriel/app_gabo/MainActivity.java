@@ -38,8 +38,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 // Perform action on click
                 DatabaseHandler db = new DatabaseHandler(v.getContext());
-                EditText user = (EditText) findViewById(R.id.username);
-                EditText pass = (EditText) findViewById(R.id.password);
+                EditText user = (EditText) findViewById(R.id.txtUsuario);
+                EditText pass = (EditText) findViewById(R.id.txtPassword);
                 String userValue = user.getText().toString();
                 String passValue = pass.getText().toString();
                 boolean accountMatch = db.validateUser(userValue,passValue);

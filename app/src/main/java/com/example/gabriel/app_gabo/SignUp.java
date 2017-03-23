@@ -15,7 +15,7 @@ public class SignUp extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_up);
+        setContentView(R.layout.activity_registro);
 
         TextView goHome = (TextView) findViewById(R.id.home);
         Button register = (Button) findViewById(R.id.reg);
@@ -33,8 +33,8 @@ public class SignUp extends Activity {
             public void onClick(View v) {
                 DatabaseHandler db = new DatabaseHandler(v.getContext());
                 Intent toMain = new Intent(SignUp.this, MainActivity.class);
-                EditText user = (EditText) findViewById(R.id.username);
-                EditText pass = (EditText) findViewById(R.id.password);
+                EditText user = (EditText) findViewById(R.id.editTextEmail);
+                EditText pass = (EditText) findViewById(R.id.editTextPassword);
                 String userValue = user.getText().toString();
                 String passValue = pass.getText().toString();
                 int charUserLength = userValue.length();
