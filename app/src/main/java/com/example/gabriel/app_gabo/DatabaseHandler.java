@@ -42,7 +42,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);// Create tables again
     }
 
-    // Adding new User
+    // Adding new Users
     void addUsers(Users users) {
         SQLiteDatabase db = this.getWritableDatabase();
 
