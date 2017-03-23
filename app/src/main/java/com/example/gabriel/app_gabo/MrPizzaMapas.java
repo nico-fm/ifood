@@ -77,15 +77,15 @@ public class MrPizzaMapas extends FragmentActivity implements OnMapReadyCallback
 
 
         LatLng avaroa = new LatLng(-16.51013565542089,-68.12625841644444);
-        mMap.addMarker(new MarkerOptions().position(avaroa).title("Mr. Pizza Plaza Avaroa"));
+        mMap.addMarker(new MarkerOptions().position(avaroa).title("Mr. Pizza Plaza Avaroa").icon(BitmapDescriptorFactory.fromResource(R.drawable.mr_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(avaroa));
 
         LatLng san = new LatLng(-16.542316800645263,-68.08091299083867);
-        mMap.addMarker(new MarkerOptions().position(san).title("Mr. Pizza San Miguel"));
+        mMap.addMarker(new MarkerOptions().position(san).title("Mr. Pizza San Miguel").icon(BitmapDescriptorFactory.fromResource(R.drawable.mr_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(san));
 
         LatLng mira = new LatLng(-16.49862666988389,-68.12098888155856);
-        mMap.addMarker(new MarkerOptions().position(mira).title("Mr. Pizza Miraflores"));
+        mMap.addMarker(new MarkerOptions().position(mira).title("Mr. Pizza Miraflores").icon(BitmapDescriptorFactory.fromResource(R.drawable.mr_logo_mapa)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mira));
 
        /* LatLng avaroa = new LatLng(-16.51013565542089,-68.12625841644444);
@@ -99,7 +99,7 @@ public class MrPizzaMapas extends FragmentActivity implements OnMapReadyCallback
         marcador = mMap.addMarker(new MarkerOptions()
                 .position(coordenadas)
                 .title("Mi Posicion")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.persona)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.user)));
         mMap.animateCamera(miUbicacion);
 
     }

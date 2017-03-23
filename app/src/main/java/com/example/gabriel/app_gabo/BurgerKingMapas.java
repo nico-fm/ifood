@@ -77,27 +77,27 @@ public class BurgerKingMapas extends FragmentActivity implements OnMapReadyCallb
 
         // Add a marker in Sydney and move the camera
         LatLng socabaya = new LatLng(-16.49686949786757, -68.13505978625366);
-        mMap.addMarker(new MarkerOptions().position(socabaya).title("BK Socabaya"));
+        mMap.addMarker(new MarkerOptions().position(socabaya).icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(socabaya));
 
         LatLng prado = new LatLng(-16.501865148169625, -68.13218311708519);
-        mMap.addMarker(new MarkerOptions().position(prado).title("BK Prado"));
+        mMap.addMarker(new MarkerOptions().position(prado).title("BK Prado").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(prado));
 
         LatLng multicine = new LatLng(-16.51103250586201, -68.12212215107033);
-        mMap.addMarker(new MarkerOptions().position(multicine).title("BK Multicine"));
+        mMap.addMarker(new MarkerOptions().position(multicine).title("BK Multicine").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(multicine));
 
         LatLng miraflores = new LatLng(-16.499117877940137, -68.12469707172463);
-        mMap.addMarker(new MarkerOptions().position(miraflores).title("BK Miraflores"));
+        mMap.addMarker(new MarkerOptions().position(miraflores).title("BK Miraflores").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(miraflores));
 
         LatLng sur = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sur).title("BK Zona Sur"));
+        mMap.addMarker(new MarkerOptions().position(sur).title("BK Zona Sur").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sur));
 
         LatLng megacenter = new LatLng(-16.532385960311267, -68.08749215047905);
-        mMap.addMarker(new MarkerOptions().position(megacenter).title("BK Megacenter"));
+        mMap.addMarker(new MarkerOptions().position(megacenter).title("BK Megacenter").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(megacenter));
 
       /*  LatLng socabaya = new LatLng(-34, 151);
@@ -112,7 +112,7 @@ public class BurgerKingMapas extends FragmentActivity implements OnMapReadyCallb
         marcador = mMap.addMarker(new MarkerOptions()
                 .position(coordenadas)
                 .title("Mi Posicion")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.persona)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.user)));
         mMap.animateCamera(miUbicacion);
 
     }

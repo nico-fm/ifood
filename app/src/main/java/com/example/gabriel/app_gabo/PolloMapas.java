@@ -86,44 +86,44 @@ public class PolloMapas extends FragmentActivity implements OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/
 
         LatLng pollomulti = new LatLng(-16.510890424457667, -68.12183411267438);
-        mMap.addMarker(new MarkerOptions().position(pollomulti).title("Pollos Copacaba Multicine"));
+        mMap.addMarker(new MarkerOptions().position(pollomulti).title("Pollos Copacaba Multicine").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollomulti));
 
         LatLng polloscomer = new LatLng(-16.494684744359958, -68.13585636612811);
-        mMap.addMarker(new MarkerOptions().position(polloscomer).title("Pollos Copacaba Comercio"));
+        mMap.addMarker(new MarkerOptions().position(polloscomer).title("Pollos Copacaba Comercio").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(polloscomer));
 
 
         LatLng pollosprado = new LatLng(-16.503710355741116, -68.1316174700562);
-        mMap.addMarker(new MarkerOptions().position(pollosprado).title("Pollos Copacaba El Prado"));
+        mMap.addMarker(new MarkerOptions().position(pollosprado).title("Pollos Copacaba El Prado").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollosprado));
 
 
         LatLng pollosmega = new LatLng(-16.532575595359194,-68.08685408380666);
-        mMap.addMarker(new MarkerOptions().position(pollosmega).title("Pollos Copacaba Megacenter"));
+        mMap.addMarker(new MarkerOptions().position(pollosmega).title("Pollos Copacaba Megacenter").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollosmega));
 
         LatLng polloscal = new LatLng(-16.539052645291157,-68.07920442369618);
-        mMap.addMarker(new MarkerOptions().position(polloscal).title("Pollos Copacaba Calacoto"));
+        mMap.addMarker(new MarkerOptions().position(polloscal).title("Pollos Copacaba Calacoto").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(polloscal));
 
 
         LatLng polloscancha = new LatLng(-16.500089360359084,-68.12364326265492);
-        mMap.addMarker(new MarkerOptions().position(polloscancha).title("Pollos Copacaba Hernando Siles"));
+        mMap.addMarker(new MarkerOptions().position(polloscancha).title("Pollos Copacaba Hernando Siles").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(polloscancha));
 
 
         LatLng pollossoca = new LatLng(-16.496625177041345,-68.13451962021031);
-        mMap.addMarker(new MarkerOptions().position(pollossoca).title("Pollos Copacaba Hernando Socabaya"));
+        mMap.addMarker(new MarkerOptions().position(pollossoca).title("Pollos Copacaba Hernando Socabaya").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollossoca));
 
 
         LatLng pollosjungla = new LatLng( -16.507891903831478,-68.16326351311841);
-        mMap.addMarker(new MarkerOptions().position(pollosjungla).title("Pollos Copacaba La Jungla"));
+        mMap.addMarker(new MarkerOptions().position(pollosjungla).title("Pollos Copacaba La Jungla").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollosjungla));
 
         LatLng pollosteleferico = new LatLng( -16.51858967171302,-68.14995439198651);
-        mMap.addMarker(new MarkerOptions().position(pollosteleferico).title("Pollos Copacaba Teleferico"));
+        mMap.addMarker(new MarkerOptions().position(pollosteleferico).title("Pollos Copacaba Teleferico").icon(BitmapDescriptorFactory.fromResource(R.drawable.pollos_copacabana_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pollosteleferico));
 
 
