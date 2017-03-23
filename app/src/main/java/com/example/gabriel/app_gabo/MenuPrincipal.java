@@ -28,37 +28,29 @@ public class MenuPrincipal extends AppCompatActivity {
     private Button btnFavoritos;
     private Button btnCerrar;
 
-    private FirebaseAuth firebaseAuth;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_principal);
-        firebaseAuth = FirebaseAuth.getInstance();
-
-        if(firebaseAuth.getCurrentUser()==null){
-            finish();
-            Intent main=new Intent(context,MainActivity.class);
-            startActivity(main);
-        }
-
-        context=this;
 
 
-        btnComidaRapida=(Button)findViewById(R.id.btnComidaRapida);
-        btnVegetariana=(Button)findViewById(R.id.btnVegetariana);
-        btnPromociones=(Button)findViewById(R.id.btnPromociones);
-        btnBuscarRestaurant=(Button)findViewById(R.id.btnBuscarRestaurant);
-        btnFavoritos=(Button)findViewById(R.id.btnFavoritos);
-        btnCerrar=(Button) findViewById(R.id.btnCerrar);
+        context = this;
+
+
+        btnComidaRapida = (Button) findViewById(R.id.btnComidaRapida);
+        btnVegetariana = (Button) findViewById(R.id.btnVegetariana);
+        btnPromociones = (Button) findViewById(R.id.btnPromociones);
+        btnBuscarRestaurant = (Button) findViewById(R.id.btnBuscarRestaurant);
+        btnFavoritos = (Button) findViewById(R.id.btnFavoritos);
+        btnCerrar = (Button) findViewById(R.id.btnCerrar);
 
 
         btnComidaRapida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,Comida.class);
+                Intent intent = new Intent(context, Comida.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +63,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPromociones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent = new Intent(getApplicationContext(), Promociones.class);
+                Intent intent = new Intent(getApplicationContext(), Promociones.class);
 
                 PendingIntent pIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
@@ -92,50 +84,49 @@ public class MenuPrincipal extends AppCompatActivity {
         });
 
 
-
         btnBuscarRestaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,BuscarRestaurant.class);
+                Intent intent = new Intent(context, BuscarRestaurant.class);
                 startActivity(intent);
             }
         });
         btnFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context,Favoritos.class);
+                Intent intent = new Intent(context, Favoritos.class);
                 startActivity(intent);
             }
         });
 
-        btnCerrar.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
+        btnCerrar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                android.app.AlertDialog.Builder Dialogo = new android.app.AlertDialog.Builder(
+                        MenuPrincipal.this);
 
-               AlertDialog.Builder Dialogo =new AlertDialog.Builder(MenuPrincipal.this);
-                Dialogo.setTitle("Cerrar Sesion");
-                Dialogo.setMessage("Seguro que deseas salir?");
+                Dialogo.setTitle("   Cerrar Sesion");
+                Dialogo.setMessage("Seguro que desea salir?");
                 Dialogo.setIcon(R.drawable.delete);
 
                 Dialogo.setPositiveButton("Si",
                         new DialogInterface.OnClickListener() {
-                            @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                firebaseAuth.signOut();
-                                Toast.makeText(getApplicationContext(),"Sesion Cerrada",Toast.LENGTH_SHORT).show();
-                                Intent a =new Intent (getApplicationContext(),MainActivity.class);
+                                Toast.makeText(getApplicationContext(), "Sesion Cerrada", Toast.LENGTH_SHORT).show();
+                                Intent a = new Intent(getApplicationContext(), MainActivity.class);
                                 finish();
                                 startActivity(a);
+                            }
+                        });
 
-                            }});
                 Dialogo.setNegativeButton("No",
-                        new DialogInterface.OnClickListener(){
-                            public void onClick(DialogInterface dialog, int which){
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
                             }
                         });
                 Dialogo.show();
+
             }
-            });
+        });
     }
 }
