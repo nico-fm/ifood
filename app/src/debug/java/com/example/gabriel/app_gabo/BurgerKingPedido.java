@@ -37,8 +37,10 @@ public class BurgerKingPedido extends AppCompatActivity {
                   // Intent i = new Intent(android.content.Intent.ACTION_DIAL, Uri.parse("tel;22408888"));
                    // startActivity(i);
 
-                    Intent intent=new Intent(BurgerKingPedido.this,Pollo.class);
-                    startActivity(intent);
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22408888"));
+                    startActivity(i);
+
                 }
 
 

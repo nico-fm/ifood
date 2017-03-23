@@ -77,7 +77,7 @@ public class BurgerKingMapas extends FragmentActivity implements OnMapReadyCallb
 
         // Add a marker in Sydney and move the camera
         LatLng socabaya = new LatLng(-16.49686949786757, -68.13505978625366);
-        mMap.addMarker(new MarkerOptions().position(socabaya).icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
+        mMap.addMarker(new MarkerOptions().position(socabaya).title("BK Socabaya").icon(BitmapDescriptorFactory.fromResource(R.drawable.bk_logo)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(socabaya));
 
         LatLng prado = new LatLng(-16.501865148169625, -68.13218311708519);
