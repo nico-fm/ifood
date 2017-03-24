@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gabriel.app_gabo.CasaDelSolV">
+
+    <Button
+        android:text="Visitar Pagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCasaDelSolPagina"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="37sp"
+        android:paddingRight="37sp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:text="HACER PEDIDO"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPedidoCasaDelSol"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignBaseline="@+id/btnCasaDelSolPagina"
+        android:layout_alignBottom="@+id/btnCasaDelSolPagina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnCasaDelSolPagina"
+        android:layout_toStartOf="@+id/btnCasaDelSolPagina" />
+
+</RelativeLayout>

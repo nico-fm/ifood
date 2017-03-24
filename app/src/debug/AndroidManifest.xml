@@ -2,13 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
-        <activity android:name="com.example.gabriel.app_gabo.PolloPedido" />
-        <activity android:name="com.example.gabriel.app_gabo.XpressPedido" />
-        <activity android:name="com.example.gabriel.app_gabo.ElisPedido" />
-        <activity android:name="com.example.gabriel.app_gabo.MrPedidos" />
-        <activity android:name="com.example.gabriel.app_gabo.PlanerPedido" />
-        <activity android:name="com.example.gabriel.app_gabo.BurgerKingPedido" />
-        <activity android:name="com.example.gabriel.app_gabo.ComidaVegetariana"></activity>
+        <activity
+            android:name="com.example.gabriel.app_gabo.PolloPedido"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.XpressPedido"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.ElisPedido"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.MrPedidos"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.PlanerPedido"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.BurgerKingPedido"
+            android:label="Pedidos" />
+        <activity
+            android:name="com.example.gabriel.app_gabo.ComidaVegetariana"
+            android:label="Comida Vegetariana" />
+        <activity android:name="com.example.gabriel.app_gabo.VinaphoV"
+            android:label="Vinapho"
+            />
+        <activity android:name="com.example.gabriel.app_gabo.NamasteV"
+            android:label="Namaste"
+            />
+        <activity android:name="com.example.gabriel.app_gabo.TomateCafeV"
+            android:label="Tomate Cafe"
+            />
+        <activity android:name="com.example.gabriel.app_gabo.CasaDelSolV"
+            android:label="Casa Del Sol"
+            ></activity>
     </application>
 
 </manifest>
