@@ -11,6 +11,9 @@
     tools:context="com.example.gabriel.app_gabo.Elis">
 
     <Button
+        android:drawableLeft="@drawable/ic_google_maps"
+        android:drawablePadding="8dp"
+        android:background="@color/colorAzulado"
         android:text="Buscar en Mapas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,6 +25,9 @@
         android:paddingLeft="25sp" />
 
     <Button
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
+        android:background="@color/colorWeb"
         android:text="Visitar Pagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,6 +39,9 @@
         android:paddingRight="37sp" />
 
     <Button
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:background="@color/backgroundComidaRapida"
         android:text="HACER PEDIDO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

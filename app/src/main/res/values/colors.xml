@@ -8,4 +8,6 @@
     <color name="colorVerdeSuave">#aed581</color>
     <color name="colorRosado">#ef9a9a</color>
     <color name="colorAzulado">#7986cb</color>
+    <color name="colorWeb">#4fc3f7</color>
+    <color name="colorPedido">#c62828</color>
 </resources>

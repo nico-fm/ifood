@@ -89,6 +89,9 @@
         android:layout_alignStart="@+id/imagen_pollo" />
 
     <Button
+        android:drawableLeft="@drawable/ic_google_maps"
+        android:drawablePadding="8dp"
+        android:background="@color/colorAzulado"
         android:text="Buscar en Mapas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,9 +100,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:paddingRight="25sp"
-        android:paddingLeft="25sp" />
+        android:paddingLeft="25sp"
+        android:layout_toLeftOf="@+id/btnPolloPagina"
+        android:layout_toStartOf="@+id/btnPolloPagina" />
 
     <Button
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
+        android:background="@color/colorWeb"
         android:text="Visitar Pagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,6 +119,9 @@
         android:paddingRight="37sp" />
 
     <Button
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:background="@color/backgroundComidaRapida"
         android:text="HACER PEDIDO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

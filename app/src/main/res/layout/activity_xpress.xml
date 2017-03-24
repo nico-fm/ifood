@@ -11,6 +11,9 @@
     tools:context="com.example.gabriel.app_gabo.Xpress">
 
     <Button
+        android:drawableLeft="@drawable/ic_google_maps"
+        android:drawablePadding="8dp"
+        android:background="@color/colorAzulado"
         android:text="Buscar en Mapas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,9 +22,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:paddingRight="25sp"
-        android:paddingLeft="25sp" />
+        android:paddingLeft="25sp"
+        android:layout_toStartOf="@+id/btnXpressPagina"
+        android:layout_toLeftOf="@+id/btnXpressPagina" />
 
     <Button
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
+        android:background="@color/colorWeb"
         android:text="Visitar Pagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,9 +38,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:paddingLeft="37sp"
-        android:paddingRight="37sp" />
+        android:paddingRight="37sp"
+        android:layout_toRightOf="@+id/Xpressbg"
+        android:layout_toEndOf="@+id/Xpressbg" />
 
     <Button
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:background="@color/backgroundComidaRapida"
         android:text="HACER PEDIDO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,6 +112,7 @@
         android:layout_alignRight="@+id/xpressAlitas"
         android:layout_alignEnd="@+id/xpressAlitas" />
     <Spinner
+
         android:id="@+id/xpressSandwiches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -120,6 +134,7 @@
         android:layout_alignLeft="@+id/xpressSandwiches"
         android:layout_alignStart="@+id/xpressSandwiches" />
     <Spinner
+
         android:id="@+id/xpressSalsas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
