@@ -24,7 +24,6 @@ public class MenuPrincipal extends AppCompatActivity {
     private Button btnVegetariana;
     private Button btnPromociones;
     private Button btnBuscarRestaurant;
-    private Button btnFavoritos;
     private Button btnCerrar;
 
     private FirebaseAuth firebaseAuth;
@@ -50,7 +49,6 @@ public class MenuPrincipal extends AppCompatActivity {
         btnVegetariana=(Button)findViewById(R.id.btnVegetariana);
         btnPromociones=(Button)findViewById(R.id.btnPromociones);
         btnBuscarRestaurant=(Button)findViewById(R.id.btnBuscarRestaurant);
-        btnFavoritos=(Button)findViewById(R.id.btnFavoritos);
         btnCerrar=(Button) findViewById(R.id.btnCerrar);
 
 
@@ -97,13 +95,6 @@ public class MenuPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(context,BuscarRestaurant.class);
-                startActivity(intent);
-            }
-        });
-        btnFavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(context,Favoritos.class);
                 startActivity(intent);
             }
         });
