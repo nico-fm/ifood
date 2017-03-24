@@ -35,4 +35,32 @@
         <item>Hot</item>
         <item>Honey Mustard</item>
     </string-array>
+
+    <string-array name="pizza_mr">
+        <item>Seleccionar</item>
+        <item>Duo</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+        <item>Familiar</item>
+        <item>Super</item>
+        <item>Super 50</item>
+        <item>Jumbo</item>
+
+    </string-array>
+
+
+    <string-array name="pizza_mr_sabor">
+        <item>Cheddarella</item>
+        <item>Gold</item>
+        <item>Cream Cheese</item>
+        <item>Cheese Cap</item>
+        <item>Shrimp Gold</item>
+    </string-array>
+
+
+
+
+
+
+
 </resources>
