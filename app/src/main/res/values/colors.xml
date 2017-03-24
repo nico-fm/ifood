@@ -3,4 +3,9 @@
     <color name="colorPrimary">#ffa200</color>
     <color name="colorPrimaryDark">#FF8000</color>
     <color name="colorAccent">#ffd500</color>
+    <color name="backgroundComidaRapida">#ffe082</color>
+    <color name="colorNegro">#212121</color>
+    <color name="colorVerdeSuave">#aed581</color>
+    <color name="colorRosado">#ef9a9a</color>
+    <color name="colorAzulado">#7986cb</color>
 </resources>

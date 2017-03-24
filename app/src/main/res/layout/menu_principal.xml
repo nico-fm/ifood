@@ -4,92 +4,90 @@
     android:id="@+id/activity_menu_principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/comidaMenu3"
+    android:padding="10sp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.gabriel.app_gabo.MainActivity"
-    android:background="@drawable/fondo_inicio_3"
-    android:padding="10sp">
+    tools:context="com.example.gabriel.app_gabo.MainActivity">
 
     <Button
+        android:drawableLeft="@drawable/pizzaIco"
+        android:drawablePadding="8dp"
         android:id="@+id/btnComidaRapida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_green_light"
+        android:background="@color/backgroundComidaRapida"
         android:padding="15dp"
         android:text="COMIDA RAPIDA"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
-        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textColor="@color/colorNegro"
         android:textScaleX="1.5" />
 
-    <Button
-        android:text="Comida Vegetariana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnVegetariana"
-        android:layout_below="@+id/btnComidaRapida"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:background="@android:color/holo_green_light"
-        android:padding="15dp" />
 
     <Button
-        android:text="Promociones"
+        android:textColor="@color/colorNegro"
+        android:drawableLeft="@drawable/iconApple"
+        android:drawablePadding="8dp"
+        android:id="@+id/btnVegetariana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:background="@color/colorVerdeSuave"
+        android:padding="15dp"
+        android:text="Comida Vegetariana"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnComidaRapida"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textColor="@color/colorNegro"
+        android:drawableLeft="@drawable/iconHappy"
+        android:drawablePadding="8dp"
         android:id="@+id/btnPromociones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/btnVegetariana"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorRosado"
+        android:padding="15dp"
+        android:text="Promociones"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:background="@android:color/holo_green_light"
-        android:padding="15dp" />
+        android:textStyle="bold" />
 
     <Button
-        android:text="Buscar Restaurant"
+        android:drawableLeft="@drawable/iconMap"
+        android:drawablePadding="8dp"
+        android:textColor="@color/colorNegro"
+        android:id="@+id/btnBuscarRestaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:id="@+id/btnBuscarRestaurant"
         android:layout_below="@+id/btnPromociones"
         android:layout_centerHorizontal="true"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:background="@android:color/holo_green_light"
-        android:padding="15dp" />
-
-    <Button
-        android:text="Favoritos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:id="@+id/btnFavoritos"
-        android:layout_below="@+id/btnBuscarRestaurant"
-        android:layout_centerHorizontal="true"
+        android:background="@color/colorAzulado"
+        android:padding="15dp"
+        android:text="Buscar Restaurant"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:background="@android:color/holo_green_light"
-        android:padding="15dp" />
-
+        android:textStyle="bold" />
     <Button
-        android:text="Cerrar Sesion"
+        android:id="@+id/btnCerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
-        android:id="@+id/btnCerrar"
-        android:background="@android:color/holo_blue_light"
-        android:textColor="@color/cast_libraries_material_featurehighlight_text_header_color"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
         android:layout_toEndOf="@+id/btnFavoritos"
-        android:textColorHint="?android:attr/textColorPrimaryInverseNoDisable"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10sp"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_header_color"
         android:textColorHighlight="@color/cast_expanded_controller_ad_container_white_stripe_color"
-        android:textColorLink="?android:attr/fastScrollTextColor"
-        android:padding="10sp" />
+        android:textColorHint="?android:attr/textColorPrimaryInverseNoDisable"
+        android:textColorLink="?android:attr/fastScrollTextColor" />
 </RelativeLayout>
