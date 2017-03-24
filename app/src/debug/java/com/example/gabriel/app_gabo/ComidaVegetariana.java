@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ComidaVegetariana extends AppCompatActivity {
-
+//
     ListViewAdapter adapter;
     private Context context;
 
