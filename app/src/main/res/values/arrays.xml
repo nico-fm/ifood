@@ -6,4 +6,33 @@
     <string-array name="lista_ensaladas">lista_ensaladas</string-array>
     <string-array name="lista_almuerzos">lista_almuerzos</string-array>
     <string-array name="lista_postres">lista_postres</string-array>
+    <string-array name="hamburguesas">
+        <item>Seleccionar</item>
+        <item>Texmex</item>
+        <item>Cowboy</item>
+        <item>Factory</item>
+        <item>All American</item>
+        <item>Austin Favorite</item>
+        <item>South of the border</item>
+        <item>Jalapeño Bluecheese</item>
+    </string-array>
+    <string-array name="alitas">
+        <item>Seleccionar</item>
+        <item>6 presas</item>
+        <item>12 presas</item>
+        <item>18 presas</item>
+        <item>24 presas</item>
+    </string-array>
+    <string-array name="sandwiches">
+        <item>Seleccionar</item>
+        <item>Grilled Sandwich</item>
+        <item>Chiken Ranch</item>
+    </string-array>
+    <string-array name="salsas">
+        <item>Seleccionar</item>
+        <item>Mild</item>
+        <item>BBQ</item>
+        <item>Hot</item>
+        <item>Honey Mustard</item>
+    </string-array>
 </resources>

@@ -5,7 +5,10 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Spinner;
 
 public class Xpress extends AppCompatActivity {
 
@@ -13,7 +16,10 @@ public class Xpress extends AppCompatActivity {
     private Button btnPedidoXpress;
     private Button btnXpressPagina;
 
-
+        Spinner hamburguesas;
+        Spinner alitas;
+        Spinner sandwiches;
+        Spinner salsas;
 
 
     @Override
@@ -25,7 +31,23 @@ public class Xpress extends AppCompatActivity {
         btnBuscarMapaXpress=(Button)findViewById(R.id.btnBuscarMapaXpress);
         btnXpressPagina=(Button)findViewById(R.id.btnXpressPagina);
 
+        hamburguesas = (Spinner) findViewById(R.id.Xpressbg);
 
+        alitas = (Spinner)findViewById(R.id.xpressAlitas);
+
+        sandwiches=(Spinner) findViewById(R.id.xpressSandwiches);
+
+        salsas =(Spinner)findViewById(R.id.xpressSalsas);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.hamburguesas, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.alitas, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.sandwiches, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.salsas, android.R.layout.simple_spinner_item);
+
+        hamburguesas.setAdapter(adapter);
+        alitas.setAdapter(adapter2);
+        sandwiches.setAdapter(adapter3);
+        salsas.setAdapter(adapter4);
 
 
 

@@ -55,12 +55,79 @@
         android:textSize="24sp" />
 
     <Spinner
-        android:id="@+id/spinnerXpress"
-        android:layout_width="match_parent"
+        android:id="@+id/Xpressbg"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView4"
-        android:layout_marginTop="14dp" />
+        android:layout_marginTop="14dp"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alitas"
+        android:textSize="24sp"
+        android:layout_below="@+id/Xpressbg"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/btnBuscarMapaXpress"
+        android:layout_alignEnd="@+id/btnBuscarMapaXpress" />
+    <Spinner
+        android:id="@+id/xpressAlitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginTop="18dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5">
+    </Spinner>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sandwiches"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/xpressAlitas"
+        android:layout_alignLeft="@+id/xpressAlitas"
+        android:layout_alignStart="@+id/xpressAlitas"
+        android:layout_alignRight="@+id/xpressAlitas"
+        android:layout_alignEnd="@+id/xpressAlitas" />
+    <Spinner
+        android:id="@+id/xpressSandwiches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="12dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salsas"
+        android:textSize="24sp"
+        android:layout_below="@+id/xpressSandwiches"
+        android:layout_alignRight="@+id/xpressSandwiches"
+        android:layout_alignEnd="@+id/xpressSandwiches"
+        android:layout_alignLeft="@+id/xpressSandwiches"
+        android:layout_alignStart="@+id/xpressSandwiches" />
+    <Spinner
+        android:id="@+id/xpressSalsas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
 
 </RelativeLayout>
