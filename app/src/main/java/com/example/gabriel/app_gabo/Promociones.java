@@ -24,6 +24,7 @@ public class Promociones extends AppCompatActivity {
         ArrayList<Item> items=new ArrayList<Item>();
         items.add(new Item(1, "Pollos Copacaban", "VEN Y DISFRUTA EL DIA DEL PADRE CON UN DESCUENTO ESPECIAL", R.drawable.pollo));
         items.add(new Item(1, "Burguer King", "LLEVATE 1 COMBO STACKER(DOBLE) POR 38 Bs.", R.drawable.burger));
+        //items.add(new Item(1, "Burguer King", "LLEVATE 1 COMBO STACKER(DOBLE) POR 38 Bs.", R.drawable.burger));
         items.add(new Item(1, "Pollos Copacaban", "¡DISFRUTA LOS SENSACIONALES TECNO RELOJES! PIDELOS JUNTO A TU COMBO COPITO", R.drawable.pollo));
         items.add(new Item(1, "Pollos Copacaban", "CELEBRA CON NOSOTRSOS TU CUMPLE(SOLO EN CINE CENTER)", R.drawable.pollo));
         items.add(new Item(1, "Pollos Copacaban", " QUE TU HAMBRE SE VAYA VOLANDO (LLEVATE 10 ALITAS AL PRECIO DE 8) ", R.drawable.pollo));
