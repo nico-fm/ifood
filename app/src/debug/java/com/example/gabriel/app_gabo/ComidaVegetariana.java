@@ -54,22 +54,22 @@ public class ComidaVegetariana extends AppCompatActivity {
 
 
                 if (position == 0){
-                    Intent intent=new Intent(context,Vinapho.class);
+                    Intent intent=new Intent(context,VinaphoV.class);
                     startActivity(intent);
 
                 }
                 if (position == 1){
-                    Intent intent=new Intent(context,Namaste.class);
+                    Intent intent=new Intent(context,NamasteV.class);
                     startActivity(intent);
 
                 }
                 if (position == 2){
-                    Intent intent=new Intent(context,TomateCafe.class);
+                    Intent intent=new Intent(context,TomateCafeV.class);
                     startActivity(intent);
 
                 }
                 if (position == 3){
-                    Intent intent=new Intent(context,CasadelSol.class);
+                    Intent intent=new Intent(context,CasaDelSolV.class);
                     startActivity(intent);
 
                 }
