@@ -1,7 +1,11 @@
 package com.example.gabriel.app_gabo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,6 +36,67 @@ public class ElisPedido extends AppCompatActivity {
         AdaptadorItem adaptador=new AdaptadorItem(ElisPedido.this, items);
 
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22335566"));
+                    startActivity(i);
+
+                }
+
+                if (position == 1){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22906692"));
+                    startActivity(i);
+
+                }
+                if (position == 2){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22146116"));
+                    startActivity(i);
+
+                }
+                if (position ==3){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22434411"));
+                    startActivity(i);
+
+                }
+                if (position == 4){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22147777"));
+                    startActivity(i);
+
+                }
+                if (position == 5){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22770582"));
+                    startActivity(i);
+
+                }
+                if (position == 6){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22710505"));
+                    startActivity(i);
+
+                }
+                if (position == 7){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22815454"));
+                    startActivity(i);
+
+                }
+
+
+
+
+
+
+            }
+        });
 
     }
 }

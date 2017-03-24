@@ -1,7 +1,11 @@
 package com.example.gabriel.app_gabo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -26,6 +30,35 @@ public class XpressPedido extends AppCompatActivity {
         AdaptadorItem adaptador=new AdaptadorItem(XpressPedido.this, items);
 
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22799398"));
+                    startActivity(i);
+
+                }
+
+                if (position == 2){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22121195"));
+                    startActivity(i);
+
+                }
+
+                if (position == 3){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22148306"));
+                    startActivity(i);
+
+                }
+
+
+
+            }
+        });
 
     }
 }

@@ -31,14 +31,16 @@ public class BurgerKingPedido extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-                if (position == 1){
-                  // Intent i = new Intent(android.content.Intent.ACTION_DIAL, Uri.parse("tel;22408888"));
-                   // startActivity(i);
-
+                if (position == 0){
                     Intent i = new Intent(android.content.Intent.ACTION_DIAL,
                             Uri.parse("tel:22408888"));
+                    startActivity(i);
+
+                }
+
+                if (position == 1){
+                    Intent i = new Intent(android.content.Intent.ACTION_DIAL,
+                            Uri.parse("tel:22796867"));
                     startActivity(i);
 
                 }
