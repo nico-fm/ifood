@@ -80,18 +80,5 @@ public class Vinapho extends AppCompatActivity {
         });
 
 
-        botonInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Vinapho.this, SucursalPollos.class);
-                startActivity(intent);
-
-
-            }
-        });
-
-
-
-
     }
 }

@@ -118,14 +118,6 @@
         android:layout_above="@+id/btnBuscarMapaPollo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-    <Button
-        android:id="@+id/btnInfo"
-        android:text="info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lbPollo"
-        android:layout_alignBottom="@+id/lbPollo"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>

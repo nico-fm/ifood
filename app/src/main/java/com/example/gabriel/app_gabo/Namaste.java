@@ -78,18 +78,6 @@ public class Namaste extends AppCompatActivity {
             }
         });
 
-
-        botonInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Namaste.this, SucursalPollos.class);
-                startActivity(intent);
-
-
-            }
-        });
-
-
     }
 
 }
