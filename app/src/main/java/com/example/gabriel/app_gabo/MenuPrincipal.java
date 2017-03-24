@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,7 @@ public class MenuPrincipal extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
 
+MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +52,14 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPromociones=(Button)findViewById(R.id.btnPromociones);
         btnBuscarRestaurant=(Button)findViewById(R.id.btnBuscarRestaurant);
         btnCerrar=(Button) findViewById(R.id.btnCerrar);
+        mp = MediaPlayer.create(this,R.raw.clik);
+
 
 
         btnComidaRapida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.start();
                 Intent intent=new Intent(context,Comida.class);
                 startActivity(intent);
             }
@@ -62,6 +67,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnVegetariana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.start();
                 Intent intent=new Intent(context,ComidaVegetariana.class);
                 startActivity(intent);
             }
@@ -69,7 +75,8 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPromociones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent = new Intent(getApplicationContext(), Promociones.class);
+               mp.start();
+                Intent intent = new Intent(getApplicationContext(), Promociones.class);
 
                 PendingIntent pIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
@@ -94,6 +101,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnBuscarRestaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.start();
                 Intent intent=new Intent(context,BuscarRestaurant.class);
                 startActivity(intent);
             }
@@ -102,7 +110,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnCerrar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+mp.start();
                AlertDialog.Builder Dialogo =new AlertDialog.Builder(MenuPrincipal.this);
                 Dialogo.setTitle("Cerrar Sesion");
                 Dialogo.setMessage("Seguro que deseas salir?");

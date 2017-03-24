@@ -13,6 +13,7 @@
     tools:context="com.example.gabriel.app_gabo.MainActivity">
 
     <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:drawableLeft="@drawable/ic_pizza"
         android:drawablePadding="8dp"
         android:id="@+id/btnComidaRapida"
@@ -30,6 +31,7 @@
 
 
     <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/colorNegro"
         android:drawableLeft="@drawable/ic_food_apple"
         android:drawablePadding="8dp"
@@ -46,6 +48,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/colorNegro"
         android:drawableLeft="@drawable/ic_emoticon_happy"
         android:drawablePadding="8dp"
@@ -62,6 +65,7 @@
         android:textStyle="bold" />
 
     <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:drawableLeft="@drawable/ic_google_maps"
         android:drawablePadding="8dp"
         android:textColor="@color/colorNegro"
@@ -77,6 +81,7 @@
         android:textSize="15sp"
         android:textStyle="bold" />
     <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:id="@+id/btnCerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
