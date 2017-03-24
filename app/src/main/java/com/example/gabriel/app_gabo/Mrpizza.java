@@ -5,10 +5,17 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class Mrpizza extends AppCompatActivity {
 
+
+    Spinner spinner1,
+            spinner2;
+    String[] pizza,
+            sabor;
 
     private Button btnBuscarMapaMr;
     private Button btnPedidoMr;
@@ -23,6 +30,19 @@ public class Mrpizza extends AppCompatActivity {
         btnPedidoMr = (Button) findViewById(R.id.btnPedidoMr);
         btnBuscarMapaMr = (Button) findViewById(R.id.btnBuscarMapaMr);
         btnMrPagina = (Button) findViewById(R.id.btnMrPagina);
+
+
+        spinner1=(Spinner)findViewById(R.id.spinnerMrPizza);
+        pizza=getResources().getStringArray(R.array.pizza_mr);
+        ArrayAdapter<String> pizzalist = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,pizza);
+
+
+        spinner2=(Spinner)findViewById(R.id.spinnerMrSabor);
+        sabor=getResources().getStringArray(R.array.pizza_mr_sabor);
+        ArrayAdapter<String> saborcolist = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,sabor);
+
+        spinner1.setAdapter(pizzalist);
+        spinner2.setAdapter(saborcolist);
 
 
         btnMrPagina.setOnClickListener(new View.OnClickListener() {
