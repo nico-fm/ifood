@@ -4,6 +4,7 @@
     android:id="@+id/activity_planet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,44 +12,46 @@
     tools:context="com.example.gabriel.app_gabo.Planet">
 
     <Button
-        android:drawableLeft="@drawable/ic_google_maps"
-        android:drawablePadding="8dp"
-        android:background="@color/colorAzulado"
-        android:text="Buscar en Mapas"
+        android:id="@+id/btnBuscarMapaPlanet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBuscarMapaPlanet"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:background="@color/colorAzulado"
+        android:drawableLeft="@drawable/ic_google_maps"
+        android:drawablePadding="8dp"
+        android:paddingLeft="25sp"
         android:paddingRight="25sp"
-        android:paddingLeft="25sp" />
+        android:text="Buscar en Mapas" />
 
     <Button
-        android:drawableLeft="@drawable/web"
-        android:drawablePadding="8dp"
-        android:background="@color/colorWeb"
-        android:text="Visitar Pagina"
+        android:id="@+id/btnPlanetPagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnPlanetPagina"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorWeb"
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
         android:paddingLeft="37sp"
-        android:paddingRight="37sp" />
+        android:paddingRight="37sp"
+        android:text="Visitar Pagina"
+        android:layout_toRightOf="@+id/btnBuscarMapaPlanet"
+        android:layout_toEndOf="@+id/btnBuscarMapaPlanet" />
 
     <Button
-        android:drawableLeft="@drawable/ic_emoticon_happy"
-        android:drawablePadding="8dp"
-        android:background="@color/backgroundComidaRapida"
-        android:text="HACER PEDIDO"
+        android:id="@+id/btnPedidoPlanet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnPedidoPlanet"
         android:layout_above="@+id/btnBuscarMapaPlanet"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@color/backgroundComidaRapida"
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:text="HACER PEDIDO" />
 
     <TextView
         android:id="@+id/textView3"

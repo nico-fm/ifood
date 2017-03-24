@@ -4,32 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorVerdeSuave"
     tools:context="com.example.gabriel.app_gabo.CasaDelSolV">
 
     <Button
-        android:text="Visitar Pagina"
+        android:id="@+id/btnCasaDelSolPagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnCasaDelSolPagina"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorWeb"
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
         android:paddingLeft="37sp"
         android:paddingRight="37sp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
+        android:text="Visitar Pagina" />
+
     <Button
-        android:text="HACER PEDIDO"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
         android:id="@+id/btnPedidoCasaDelSol"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp"
-        android:layout_alignBaseline="@+id/btnCasaDelSolPagina"
-        android:layout_alignBottom="@+id/btnCasaDelSolPagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundComidaRapida"
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:text="HACER PEDIDO"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/btnCasaDelSolPagina"
-        android:layout_toStartOf="@+id/btnCasaDelSolPagina" />
+        android:layout_toStartOf="@+id/btnCasaDelSolPagina"
+        android:layout_toLeftOf="@+id/btnCasaDelSolPagina" />
 
 </RelativeLayout>

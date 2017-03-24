@@ -39,10 +39,10 @@ public class Xpress extends AppCompatActivity {
 
         salsas =(Spinner)findViewById(R.id.xpressSalsas);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.hamburguesas, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.alitas, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.sandwiches, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.salsas, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.hamburguesas, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.alitas, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.sandwiches, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.salsas, android.R.layout.simple_spinner_dropdown_item);
 
         hamburguesas.setAdapter(adapter);
         alitas.setAdapter(adapter2);

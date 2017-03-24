@@ -4,32 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorVerdeSuave"
     tools:context="com.example.gabriel.app_gabo.TomateCafeV">
 
     <Button
-        android:text="Visitar Pagina"
+        android:id="@+id/btnTomateCafePagina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnTomateCafePagina"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorWeb"
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="8dp"
         android:paddingLeft="37sp"
         android:paddingRight="37sp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
-    <Button
-        android:text="HACER PEDIDO"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPedidoTomateCafe"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp"
+        android:text="Visitar Pagina" />
 
-        android:layout_alignTop="@+id/btnTomateCafePagina"
+    <Button
+        android:id="@+id/btnPedidoTomateCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundComidaRapida"
+        android:drawableLeft="@drawable/ic_emoticon_happy"
+        android:drawablePadding="8dp"
+        android:text="HACER PEDIDO"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/btnTomateCafePagina"
-        android:layout_toStartOf="@+id/btnTomateCafePagina" />
+        android:layout_toStartOf="@+id/btnTomateCafePagina"
+        android:layout_toLeftOf="@+id/btnTomateCafePagina" />
 
 </RelativeLayout>
